@@ -12,9 +12,9 @@ export const Layout: React.FC = ({ children }) => {
         <OpenInvitation />
       ) : (
         <motion.div
-          animate={{ opacity: 1 }}
-          initial={{ opacity: 0 }}
-          transition={{ duration: 1 }}
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.8, type: 'tween' }}
         >
           <main className="flex flex-col w-full min-h-screen bg-gray-100">
             {children}
