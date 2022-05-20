@@ -50,6 +50,12 @@ a {
   padding: 0;
 }
 
+.background-pink {
+  background-image: url('../assets/img/bg-pink.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
 .text-shadow {
   text-shadow: 2px 2px 4px #000000;
 }
