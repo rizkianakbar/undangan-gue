@@ -29,7 +29,7 @@ a {
 }
 
 .section1 {
-  background-image: url('../assets/img/foto-1.png');
+  background-image: url('https://ik.imagekit.io/rizkianakbar/foto-1_O-JwXAm6O.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653032161018');
   background-size: cover;
   background-position: center;
   min-height: 100vh;

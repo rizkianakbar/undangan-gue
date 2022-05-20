@@ -3,7 +3,6 @@ import { PageSection } from '@/components/layout/pages';
 import { Container } from '@/components/layout/container';
 import type { NextPage } from 'next';
 import Image from 'next/image';
-import { foto1 } from '@/assets/img';
 
 const Home: NextPage = () => {
   return (
