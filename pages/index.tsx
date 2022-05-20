@@ -62,8 +62,11 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="section2" ref={fieldRef}>
-            <div className="text-center text-gray-500 text-xl pt-10 font-formal mx-4">
+          <div
+            className="section2 mx-auto flex flex-col items-center justify-center"
+            ref={fieldRef}
+          >
+            <div className="text-center text-gray-500 font-formal mx-4">
               <motion.em
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -76,7 +79,7 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-4 text-xl block"
+                className="mb-4 text-lg block"
               >
                 Assalamu&apos;alaikum Warahmatullahi Wabarakatuh
               </motion.em>
@@ -84,7 +87,7 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-4 text-lg "
+                className="mb-4 text-lg block"
               >
                 Dengan memohon Rahmat dan Ridho Allah SWT, kami bermaksud
                 menyelenggarakan resepsi pernikahan putra-putri kami.
@@ -104,7 +107,7 @@ const Home: NextPage = () => {
               >
                 <span className="block">Putri Pertama</span>
                 <span className="block">Bapak H. Asep Drajat &</span>
-                <span className="block">Ibu Hj. Noneng Supertika</span>
+                <span className="block">Ibu Hj. Noneng Supartika</span>
               </motion.p>
             </div>
           </div>
