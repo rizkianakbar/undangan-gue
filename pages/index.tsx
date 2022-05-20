@@ -18,7 +18,6 @@ const Home: NextPage = () => {
               <p className="text-lg mt-[100%]">Minggu, 29 Mei 2022</p>
             </div>
           </div>
-          <div className="section1">asd</div>
         </Container>
       </PageSection>
     </>
