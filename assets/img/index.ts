@@ -3,5 +3,7 @@ import cover from './cover.png';
 import bgGray from './bg-gray.jpg';
 import bgPink from './bg-pink.jpg';
 import arrowDown from './arrow-down.png';
+import manCover from './man-cover.png';
+import womenCover from './women-cover.png';
 
-export { home, cover, bgGray, bgPink, arrowDown };
+export { home, cover, bgGray, bgPink, arrowDown, manCover, womenCover };

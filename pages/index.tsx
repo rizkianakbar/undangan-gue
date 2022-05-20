@@ -4,7 +4,7 @@ import { Container } from '@/components/layout/container';
 import type { NextPage } from 'next';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { cover } from '../assets/img';
+import { manCover, womenCover } from '../assets/img';
 
 const Home: NextPage = () => {
   const fieldRef = React.useRef<HTMLInputElement>(null);
@@ -71,43 +71,53 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className=" text-lg block"
+                className="mb-4 text-sm block"
               >
                 Bismillahirrahmanirrahim
               </motion.em>{' '}
-              <motion.em
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-4 text-lg block"
-              >
-                Assalamu&apos;alaikum Warahmatullahi Wabarakatuh
-              </motion.em>
               <motion.p
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-4 text-lg block"
+                className="mb-4 text-sm block"
               >
                 Dengan memohon Rahmat dan Ridho Allah SWT, kami bermaksud
                 menyelenggarakan resepsi pernikahan putra-putri kami.
               </motion.p>
               <Image
-                src={cover}
+                src={womenCover}
                 alt="cover-image"
-                width="243px"
-                height="280px"
+                width="263px"
+                height="223px"
               />
-              <p className="font-gaya text-3xl mb-6">Vinni Haiva Azkani</p>
+              <p className="font-gaya text-3xl mb-4">Vinni Haiva Azkani</p>
               <motion.p
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-10 text-lg "
+                className="mb-7 text-sm"
               >
-                <span className="block">Putri Pertama</span>
-                <span className="block">Bapak H. Asep Drajat &</span>
-                <span className="block">Ibu Hj. Noneng Supartika</span>
+                Putri pertama dari Bapak H. Asep Drajat & Ibu Hj. Neneng
+                Suparika
+              </motion.p>
+              <p className="font-gaya text-3xl my-2">&</p>
+              <Image
+                src={manCover}
+                alt="cover-image"
+                width="263px"
+                height="223px"
+              />
+              <p className="font-gaya text-3xl mb-4">
+                Rifqi Fariz Radifan, S.T
+              </p>
+              <motion.p
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
+                className="mb-10 text-sm"
+              >
+                Putri pertama dari Bapak Agus Dadang Hidayat, S.Pd.I & Ibu
+                Susmiati Ramini
               </motion.p>
             </div>
           </div>
