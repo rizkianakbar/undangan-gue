@@ -18,7 +18,7 @@ export const Layout: React.FC = ({ children }) => {
         >
           <main className="flex flex-col w-full min-h-screen bg-gray-100">
             {children}
-            <Navigation />
+            {/* <Navigation /> */}
           </main>
         </motion.div>
       )}

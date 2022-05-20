@@ -27,3 +27,12 @@ a {
 .font-formal {
   font-family: 'Alegreya', serif;
 }
+
+.section1 {
+  background-image: url('../assets/img/foto-1.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
