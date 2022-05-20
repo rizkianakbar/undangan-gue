@@ -10,7 +10,7 @@ const Home: NextPage = () => {
       <PageSection>
         <Container className=" ">
           <div className="section1">
-            <div className="text-center text-white text-xl pt-36 font-formal">
+            <div className="text-center text-white text-xl pt-40 font-formal">
               <motion.p
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
