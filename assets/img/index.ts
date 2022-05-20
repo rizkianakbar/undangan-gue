@@ -1,4 +1,7 @@
 import home from './home.png';
 import cover from './cover.png';
+import bgGray from './bg-gray.jpg';
+import bgPink from './bg-pink.jpg';
+import arrowDown from './arrow-down.png';
 
-export { home, cover };
+export { home, cover, bgGray, bgPink, arrowDown };
