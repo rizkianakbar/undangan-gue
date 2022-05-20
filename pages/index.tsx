@@ -10,7 +10,7 @@ const Home: NextPage = () => {
       <PageSection>
         <Container className=" ">
           <div className="section1">
-            <div className="text-center text-white text-xl pt-32 font-formal">
+            <div className="text-center text-white text-xl pt-36 font-formal">
               <p className="mb-4 text-lg">The Wedding Of</p>
               <p className="font-gaya text-5xl mb-4">
                 Vinni <span className="text-white">&</span> Rifqi
