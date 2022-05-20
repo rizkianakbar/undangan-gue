@@ -37,6 +37,15 @@ a {
   padding: 0;
 }
 
+.section2 {
+  background-image: url('../assets/img/bg-pink.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
 .text-shadow {
   text-shadow: 2px 2px 4px #000000;
 }

@@ -3,6 +3,8 @@ import { PageSection } from '@/components/layout/pages';
 import { Container } from '@/components/layout/container';
 import type { NextPage } from 'next';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { arrowDown } from '@/assets/img';
 
 const Home: NextPage = () => {
   return (
@@ -31,10 +33,44 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.5, duration: 0.8, type: 'tween' }}
-                className="text-lg mt-[100%] text-shadow-soft"
+                className="text-lg mt-[100%] text-shadow-soft mb-20"
               >
                 Minggu, 29 Mei 2022
               </motion.p>
+              <div className="animate-bounce bg-white p-2 m-auto w-14 h-14 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center cursor-pointer">
+                <svg
+                  className="w-6 h-6 text-pink-300"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div className="section2">
+            <div className="text-center text-pink-100 text-xl pt-20 font-formal">
+              <motion.em
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
+                className="mb-2 text-lg"
+              >
+                Bismillahirrahmanirrahim
+              </motion.em>{' '}
+              <br />
+              <motion.em
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
+                className="mb-4 text-xl "
+              >
+                Assalamu&apos;alaikum Warahmatullahi Wabarakatuh
+              </motion.em>
             </div>
           </div>
         </Container>
