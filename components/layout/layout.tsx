@@ -14,7 +14,7 @@ export const Layout: React.FC = ({ children }) => {
         <motion.div
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 1 }}
         >
           <main className="flex flex-col w-full min-h-screen bg-gray-100">
             {children}
