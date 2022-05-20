@@ -3,6 +3,8 @@ import { PageSection } from '@/components/layout/pages';
 import { Container } from '@/components/layout/container';
 import type { NextPage } from 'next';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { cover } from '../assets/img';
 
 const Home: NextPage = () => {
   const fieldRef = React.useRef<HTMLInputElement>(null);
@@ -61,24 +63,49 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="section2" ref={fieldRef}>
-            <div className="text-center text-pink-100 text-xl pt-20 font-formal">
+            <div className="text-center text-gray-500 text-xl pt-10 font-formal mx-4">
               <motion.em
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-2 text-lg"
+                className="mb-8 text-lg block"
               >
                 Bismillahirrahmanirrahim
               </motion.em>{' '}
-              <br />
               <motion.em
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-4 text-xl "
+                className="mb-4 text-xl block"
               >
                 Assalamu&apos;alaikum Warahmatullahi Wabarakatuh
               </motion.em>
+              <motion.p
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
+                className="mb-4 text-lg "
+              >
+                Dengan memohon Rahmat dan Ridho Allah SWT, kami bermaksud
+                menyelenggarakan resepsi pernikahan putra-putri kami.
+              </motion.p>
+              <Image
+                src={cover}
+                alt="cover-image"
+                width="243px"
+                height="280px"
+              />
+              <p className="font-gaya text-3xl mb-6">Vinni Haiva Azkani</p>
+              <motion.p
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
+                className="mb-2 text-lg "
+              >
+                <span className="block">Putri Pertama</span>
+                <span className="block">Bapak H. Asep Drajat &</span>
+                <span className="block">Ibu Hj. Noneng Supertika</span>
+              </motion.p>
             </div>
           </div>
         </Container>

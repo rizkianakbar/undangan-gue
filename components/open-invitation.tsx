@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React from 'react';
 
-import { cover, bgPink } from '../assets/img';
+import { cover } from '../assets/img';
 
 const OpenInvitation = () => {
   const router = useRouter();
