@@ -3,8 +3,7 @@ import { PageSection } from '@/components/layout/pages';
 import { Container } from '@/components/layout/container';
 import type { NextPage } from 'next';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
-import { arrowDown } from '@/assets/img';
+import { Link } from 'react-scroll';
 
 const Home: NextPage = () => {
   return (
@@ -37,19 +36,21 @@ const Home: NextPage = () => {
               >
                 Minggu, 29 Mei 2022
               </motion.p>
-              <div className="animate-bounce bg-white p-2 m-auto w-14 h-14 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center cursor-pointer">
-                <svg
-                  className="w-6 h-6 text-pink-300"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                </svg>
-              </div>
+              <Link to="section2" spy={true} smooth={true} duration={500}>
+                <div className="animate-bounce bg-white p-2 m-auto w-14 h-14 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center cursor-pointer">
+                  <svg
+                    className="w-6 h-6 text-pink-300"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                  </svg>
+                </div>
+              </Link>
             </div>
           </div>
           <div className="section2">
