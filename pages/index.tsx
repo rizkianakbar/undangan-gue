@@ -66,12 +66,12 @@ const Home: NextPage = () => {
             className="section2 mx-auto flex flex-col items-center justify-center"
             ref={fieldRef}
           >
-            <div className="text-center text-gray-500 font-formal mx-4">
+            <div className="text-center text-gray-500 font-formal mx-4 pt-10">
               <motion.em
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-8 text-lg block"
+                className=" text-lg block"
               >
                 Bismillahirrahmanirrahim
               </motion.em>{' '}
