@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <PageSection>
         <Container className=" ">
           <div className="section1">
-            <div className="text-center text-white text-xl pt-40 font-formal">
+            <div className="text-center text-white text-xl pt-20 font-formal">
               <motion.p
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.5, duration: 0.8, type: 'tween' }}
-                className="text-lg mt-[100%] text-shadow-soft mb-20"
+                className="text-lg mt-[100%] text-shadow-soft mb-10"
               >
                 Minggu, 29 Mei 2022
               </motion.p>
