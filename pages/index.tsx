@@ -15,7 +15,7 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-4 text-lg"
+                className="mb-4 text-lg text-shadow"
               >
                 The Wedding Of
               </motion.p>
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.5, duration: 0.8, type: 'tween' }}
-                className="font-gaya text-5xl mb-4"
+                className="font-gaya text-5xl mb-4 text-shadow"
               >
                 Vinni <span className="text-white">&</span> Rifqi
               </motion.p>
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.5, duration: 0.8, type: 'tween' }}
-                className="text-lg mt-[100%]"
+                className="text-lg mt-[100%] text-shadow-soft"
               >
                 Minggu, 29 Mei 2022
               </motion.p>
