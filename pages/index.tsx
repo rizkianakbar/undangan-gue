@@ -181,7 +181,7 @@ const Home: NextPage = () => {
               </motion.p>
             </div>
           </div>
-          <div className="section2 mx-auto flex flex-col items-center justify-center">
+          {/* <div className="section2 mx-auto flex flex-col items-center justify-center">
             <div className="text-center text-gray-500 font-formal py-5">
               <motion.p
                 initial={{ x: 100, opacity: 0 }}
@@ -226,7 +226,7 @@ const Home: NextPage = () => {
                 Lihat Lokasi
               </motion.button>
             </div>
-          </div>
+          </div> */}
         </Container>
       </PageSection>
     </>
