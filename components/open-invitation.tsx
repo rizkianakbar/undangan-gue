@@ -28,6 +28,18 @@ const OpenInvitation = () => {
     },
   };
 
+  const launchIntoFullscreen = (element: any) => {
+    if (element.requestFullscreen) {
+      element.requestFullscreen();
+    } else if (element.mozRequestFullScreen) {
+      element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullscreen) {
+      element.webkitRequestFullscreen();
+    } else if (element.msRequestFullscreen) {
+      element.msRequestFullscreen();
+    }
+  };
+
   return (
     <div className="z-50 section2 mx-auto flex flex-col items-center justify-center">
       <Image src={cover} alt="cover-image" width="243px" height="280px" />
@@ -51,7 +63,10 @@ const OpenInvitation = () => {
         </p>
         <button
           className="animate-bounce bg-gray-500 text-white uppercase px-4 py-2 mt-6 text-sm border-2 border-white"
-          onClick={() => setOpen(true)}
+          onClick={() => {
+            setOpen(true);
+            launchIntoFullscreen(document.documentElement);
+          }}
         >
           buka undangan
         </button>
