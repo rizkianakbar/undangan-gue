@@ -14,6 +14,9 @@ const Home: NextPage = () => {
     }
   };
 
+  const openGoogleMaps = () => {
+    window.open('https://goo.gl/maps/WTjvSdUKmc92rsWbA', '_blank');
+  };
   return (
     <>
       <PageSection>
@@ -181,7 +184,7 @@ const Home: NextPage = () => {
               </motion.p>
             </div>
           </div>
-          {/* <div className="section2 mx-auto flex flex-col items-center justify-center">
+          <div className="section2 mx-auto flex flex-col items-center justify-center">
             <div className="text-center text-gray-500 font-formal py-5">
               <motion.p
                 initial={{ x: 100, opacity: 0 }}
@@ -193,7 +196,7 @@ const Home: NextPage = () => {
               </motion.p>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15839.506586275318!2d107.5347955!3d-7.0237829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xec5c26dd6abbbfb4!2sSutan%20Raja%20Hotel%20and%20Convention%20Centre!5e0!3m2!1sen!2sid!4v1653124996353!5m2!1sen!2sid"
-                width="90%"
+                width="300px"
                 height="400px"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -222,11 +225,12 @@ const Home: NextPage = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
                 className="bg-gray-500 text-white uppercase px-4 py-2 mt-6 text-sm border-2 border-white"
+                onClick={openGoogleMaps}
               >
                 Lihat Lokasi
               </motion.button>
             </div>
-          </div> */}
+          </div>
         </Container>
       </PageSection>
     </>
