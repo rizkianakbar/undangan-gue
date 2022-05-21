@@ -67,7 +67,7 @@ const Home: NextPage = () => {
             ref={fieldRef}
           >
             <div className="text-center text-gray-500 font-formal pt-5">
-              <div className="mx-4 background-pink py-5 rounded-xl shadow-lg">
+              <div className="mx-4 px-2 background-pink py-5 rounded-xl shadow-lg">
                 <motion.em
                   initial={{ y: 100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
