@@ -223,7 +223,7 @@ const Home: NextPage = () => {
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
                 className="text-lg font-gaya"
               >
-                Pukul 08.00 WIB
+                Pukul 11.00 s.d. 14.00 WIB
               </motion.p>
             </div>
           </div>
