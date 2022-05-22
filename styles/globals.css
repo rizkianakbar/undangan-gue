@@ -33,7 +33,7 @@ a {
 }
 
 .section1 {
-  background-image: url('https://res.cloudinary.com/rizkianakbar/image/upload/v1653034166/foto-1-min_1_hvxfir.png');
+  background-image: url('https://res.cloudinary.com/rizkianakbar/image/upload/v1653203393/NSYT1885_1_esftsl.jpg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -45,6 +45,17 @@ a {
   background-image: url('../assets/img/bg-pink.jpg');
   background-size: cover;
   background-position: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.section3 {
+  background-image: url('https://res.cloudinary.com/rizkianakbar/image/upload/v1653204477/NSYT3056_1_2_t9el49.jpg');
+  background-size: cover;
+  /* position bottom */
+  background-position: bottom;
+
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -120,4 +131,12 @@ a {
   content: '>';
   font-size: 30px !important;
   color: pink !important;
+}
+
+.bg-transparent {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.bg-transparent-soft {
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
