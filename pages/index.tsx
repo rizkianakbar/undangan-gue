@@ -16,6 +16,7 @@ import {
 } from '../assets/img';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Navigation, Thumbs } from 'swiper';
+import Countdown from 'react-countdown';
 
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -60,12 +61,54 @@ const Home: NextPage = () => {
       window.location.href = `https://wa.me/${num}?text=Saya%20${name}%20Tidak%20Akan%20Menghadiri%20Acara`;
     }
   };
+
+  const date = new Date();
+  date.setDate(29);
+  date.setMonth(4);
+  date.setFullYear(2022);
+  date.setHours(8);
+
+  const renderer = ({ days, hours, minutes, seconds, completed }: any) => {
+    if (completed) {
+      return <div>Wedding is here!</div>;
+    } else {
+      return (
+        <div className="grid grid-flow-col gap-5 text-center auto-cols-max mb-10 ml-5 text-white">
+          <div className="flex flex-col p-2 bg-gray-500 text-white rounded-box">
+            <span className="font-mono text-4xl">
+              <span>0{days}</span>
+            </span>
+            days
+          </div>
+          <div className="flex flex-col p-2 bg-gray-500 text-white rounded-box">
+            <span className="font-mono text-4xl">
+              <span>{hours}</span>
+            </span>
+            hours
+          </div>
+          <div className="flex flex-col p-2 bg-gray-500 text-white rounded-box">
+            <span className="font-mono text-4xl">
+              <span>{minutes}</span>
+            </span>
+            min
+          </div>
+          <div className="flex flex-col p-2 bg-gray-500 text-white rounded-box">
+            <span className="font-mono text-4xl">
+              <span>{seconds}</span>
+            </span>
+            sec
+          </div>
+        </div>
+      );
+    }
+  };
+
   return (
     <>
       <PageSection>
         <Container className=" ">
           <div className="section1">
-            <div className="text-center text-white text-xl pt-20 font-formal">
+            <div className="text-center text-white text-xl pt-28 font-formal">
               <motion.p
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -112,7 +155,7 @@ const Home: NextPage = () => {
             className="section2 mx-auto flex flex-col items-center justify-center"
             ref={fieldRef}
           >
-            <div className="text-center text-[#E2C6C6] font-formal pt-5 mx-4">
+            <div className="text-center text-[#E2C6C6] font-formal pt-16 mx-4">
               <motion.em
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -147,7 +190,7 @@ const Home: NextPage = () => {
                 width="200px"
                 height="230px"
               />
-              <p className="font-gaya text-3xl mb-4 tracking-tighter">
+              <p className="font-gaya text-3xl mb-4 ">
                 apt. Vinni Haiva Azhari, S.Fam
               </p>
               <motion.p
@@ -182,6 +225,7 @@ const Home: NextPage = () => {
           </div>
           <div className="section6 mx-auto flex flex-col items-center justify-center">
             <div className="text-center text-gray-500 font-formal py-5 ">
+              <Countdown date={date} renderer={renderer} />
               <motion.p
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -447,7 +491,7 @@ const Home: NextPage = () => {
               <p className="m-10 text-5xl font-gaya text-pink-200 text-shadow">
                 Cerita Cinta Kita
               </p>
-              <ol className="relative border-l-2 border-pink-200 ">
+              <ol className="relative border-l-2 border-pink-200">
                 <li className="mb-10 ml-6">
                   <span className="flex absolute -left-3 justify-center items-center w-6 h-6 rounded-full bg-pink-200">
                     <Image
