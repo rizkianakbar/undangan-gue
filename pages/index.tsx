@@ -4,7 +4,7 @@ import { Container } from '@/components/layout/container';
 import type { NextPage } from 'next';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { manCover, ring, womenCover } from '../assets/img';
+import { manCover, maps, ring, womenCover } from '../assets/img';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Navigation, Thumbs } from 'swiper';
 
@@ -136,12 +136,12 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="section2 mx-auto flex flex-col items-center justify-center">
-            <div className="text-center text-gray-500 font-formal py-5">
+            <div className="text-center text-gray-500 font-formal py-5 ">
               <motion.p
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-4 text-sm"
+                className="mb-4 text-4xl font-gaya"
               >
                 Akad nikah
               </motion.p>
@@ -149,7 +149,7 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="text-sm"
+                className="text-lg font-gaya"
               >
                 Minggu, 29 Mei 2022
               </motion.p>
@@ -157,7 +157,7 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="text-sm"
+                className="text-lg font-gaya"
               >
                 Pukul 08.00 WIB
               </motion.p>
@@ -171,15 +171,15 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-4 text-sm"
+                className="mb-4 text-4xl font-gaya"
               >
-                Akad nikah
+                Resepsi
               </motion.p>
               <motion.p
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="text-sm"
+                className="text-lg font-gaya"
               >
                 Minggu, 29 Mei 2022
               </motion.p>
@@ -187,19 +187,19 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="text-sm"
+                className="text-lg font-gaya"
               >
                 Pukul 08.00 WIB
               </motion.p>
             </div>
           </div>
           <div className="section2 mx-auto flex flex-col items-center justify-center">
-            <div className="text-center text-gray-500 font-formal py-5">
+            <div className="text-center text-gray-500 font-formal p-5">
               <motion.p
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-4 text-sm"
+                className="mb-10 text-4xl font-gaya"
               >
                 Lokasi Pernikahan
               </motion.p>
@@ -210,21 +210,14 @@ const Home: NextPage = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 frameBorder="0"
-                className="rounded-lg shadow-lg mb-10 mx-auto"
+                className="rounded-lg shadow-lg mb-10 mx-auto border-2 border-pink-200"
               ></iframe>
+              <Image src={maps} alt="cover-image" width="50px" height="50px" />
               <motion.p
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="text-sm"
-              >
-                Lokasi Pernikahan
-              </motion.p>
-              <motion.p
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="text-sm"
+                className="text-sm px-6"
               >
                 Sutan Raja Hotel Convention Centere Jl. Raya Soreang Km 17
                 Soreang Kab. Bandung
@@ -242,7 +235,7 @@ const Home: NextPage = () => {
           </div>
           <div className="section2 mx-auto">
             <div className="text-center text-gray-500 font-formal py-5 mx-4">
-              <p className="my-20">Gallery</p>
+              <p className="m-10 text-4xl font-gaya">Gallery</p>
               <Swiper
                 loop={false}
                 spaceBetween={10}

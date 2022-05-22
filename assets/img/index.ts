@@ -6,5 +6,16 @@ import arrowDown from './arrow-down.png';
 import manCover from './man-cover.png';
 import womenCover from './women-cover.png';
 import ring from './ring.png';
+import maps from './maps.png';
 
-export { home, cover, bgGray, bgPink, arrowDown, manCover, womenCover, ring };
+export {
+  home,
+  cover,
+  bgGray,
+  bgPink,
+  arrowDown,
+  manCover,
+  womenCover,
+  ring,
+  maps,
+};
