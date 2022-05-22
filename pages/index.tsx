@@ -15,6 +15,7 @@ import 'swiper/css/thumbs';
 
 const Home: NextPage = () => {
   const fieldRef = React.useRef<HTMLInputElement>(null);
+  const lazyRoot = React.useRef(null);
   const scrollDown = () => {
     if (fieldRef.current) {
       fieldRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -252,88 +253,78 @@ const Home: NextPage = () => {
               >
                 <SwiperSlide>
                   <Image
-                    src="https://swiperjs.com/demos/images/nature-1.jpg"
+                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201623/1_adrat6.jpg"
                     alt="cover-image"
                     width="500"
                     height="500"
                     className="rounded-lg shadow-lg"
+                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                    placeholder="blur"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="https://swiperjs.com/demos/images/nature-2.jpg"
+                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201629/2_uv6npa.jpg"
                     alt="cover-image"
                     width="500"
                     height="500"
+                    blurDataURL="LHEpD@0000~q^-00%N?bWXV@%MIU"
+                    placeholder="blur"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="https://swiperjs.com/demos/images/nature-3.jpg"
+                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201625/3_czmtqk.jpg"
                     alt="cover-image"
                     width="500"
                     height="500"
+                    blurDataURL="|JHM1Mx]X8t7ITozaeaeR%_4%NM_WBozRjWBj[ofx[niRjofjZaytRazax?HxuRjfkaekCkCofWBR4xvV@ayf+j[V@RjkC%2V@o#ogRjRjozj[ae%gaeWBoft7t8ofj[j[%Nt7t8aeofj[ofkCozjYoftRaeogayayV@WB"
+                    placeholder="blur"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="https://swiperjs.com/demos/images/nature-4.jpg"
+                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201628/4_z2ivt2.jpg"
                     alt="cover-image"
                     width="500"
                     height="500"
+                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                    placeholder="blur"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="https://swiperjs.com/demos/images/nature-5.jpg"
+                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201630/5_dzhmka.jpg"
                     alt="cover-image"
                     width="500"
                     height="500"
+                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                    placeholder="blur"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="https://swiperjs.com/demos/images/nature-6.jpg"
+                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201628/6_hvngjq.jpg"
                     alt="cover-image"
                     width="500"
                     height="500"
+                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                    placeholder="blur"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="https://swiperjs.com/demos/images/nature-7.jpg"
+                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201629/7_oiixk4.jpg"
                     alt="cover-image"
                     width="500"
                     height="500"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="https://swiperjs.com/demos/images/nature-8.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="https://swiperjs.com/demos/images/nature-9.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="https://swiperjs.com/demos/images/nature-10.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
+                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                    placeholder="blur"
                   />
                 </SwiperSlide>
               </Swiper>
               <Swiper
-                loop={true}
+                loop={false}
                 spaceBetween={10}
                 slidesPerView={4}
                 freeMode={true}
@@ -343,82 +334,73 @@ const Home: NextPage = () => {
               >
                 <SwiperSlide>
                   <Image
-                    src="https://swiperjs.com/demos/images/nature-1.jpg"
+                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201623/1_adrat6.jpg"
                     alt="cover-image"
                     width="500"
                     height="500"
+                    className="rounded-lg shadow-lg"
+                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                    placeholder="blur"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="https://swiperjs.com/demos/images/nature-2.jpg"
+                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201629/2_uv6npa.jpg"
                     alt="cover-image"
                     width="500"
                     height="500"
+                    blurDataURL="LHEpD@0000~q^-00%N?bWXV@%MIU"
+                    placeholder="blur"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="https://swiperjs.com/demos/images/nature-3.jpg"
+                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201625/3_czmtqk.jpg"
                     alt="cover-image"
                     width="500"
                     height="500"
+                    blurDataURL="|JHM1Mx]X8t7ITozaeaeR%_4%NM_WBozRjWBj[ofx[niRjofjZaytRazax?HxuRjfkaekCkCofWBR4xvV@ayf+j[V@RjkC%2V@o#ogRjRjozj[ae%gaeWBoft7t8ofj[j[%Nt7t8aeofj[ofkCozjYoftRaeogayayV@WB"
+                    placeholder="blur"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="https://swiperjs.com/demos/images/nature-4.jpg"
+                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201628/4_z2ivt2.jpg"
                     alt="cover-image"
                     width="500"
                     height="500"
+                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                    placeholder="blur"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="https://swiperjs.com/demos/images/nature-5.jpg"
+                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201630/5_dzhmka.jpg"
                     alt="cover-image"
                     width="500"
                     height="500"
+                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                    placeholder="blur"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="https://swiperjs.com/demos/images/nature-6.jpg"
+                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201628/6_hvngjq.jpg"
                     alt="cover-image"
                     width="500"
                     height="500"
+                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                    placeholder="blur"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="https://swiperjs.com/demos/images/nature-7.jpg"
+                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201629/7_oiixk4.jpg"
                     alt="cover-image"
                     width="500"
                     height="500"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="https://swiperjs.com/demos/images/nature-8.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="https://swiperjs.com/demos/images/nature-9.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="https://swiperjs.com/demos/images/nature-10.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
+                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                    placeholder="blur"
                   />
                 </SwiperSlide>
               </Swiper>
