@@ -269,6 +269,7 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="LHEpD@0000~q^-00%N?bWXV@%MIU"
+                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -279,6 +280,7 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="|JHM1Mx]X8t7ITozaeaeR%_4%NM_WBozRjWBj[ofx[niRjofjZaytRazax?HxuRjfkaekCkCofWBR4xvV@ayf+j[V@RjkC%2V@o#ogRjRjozj[ae%gaeWBoft7t8ofj[j[%Nt7t8aeofj[ofkCozjYoftRaeogayayV@WB"
+                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -289,6 +291,7 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -299,6 +302,7 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -309,6 +313,7 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -319,6 +324,7 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -350,6 +356,7 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="LHEpD@0000~q^-00%N?bWXV@%MIU"
+                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -360,6 +367,7 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="|JHM1Mx]X8t7ITozaeaeR%_4%NM_WBozRjWBj[ofx[niRjofjZaytRazax?HxuRjfkaekCkCofWBR4xvV@ayf+j[V@RjkC%2V@o#ogRjRjozj[ae%gaeWBoft7t8ofj[j[%Nt7t8aeofj[ofkCozjYoftRaeogayayV@WB"
+                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -370,6 +378,7 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -380,6 +389,7 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -390,6 +400,7 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -400,6 +411,7 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
