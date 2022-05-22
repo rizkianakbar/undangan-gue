@@ -547,9 +547,10 @@ const Home: NextPage = () => {
                     onClick={() => {
                       setIsHadir(true);
                     }}
+                    checked
                   />
                   <label
-                    className="form-check-label inline-block"
+                    className="form-check-label inline-block text-sm"
                     htmlFor="flexRadioDefault1"
                   >
                     Akan menghadiri acara
@@ -564,10 +565,9 @@ const Home: NextPage = () => {
                     onClick={() => {
                       setIsHadir(false);
                     }}
-                    checked
                   />
                   <label
-                    className="form-check-label inline-block "
+                    className="form-check-label inline-block text-sm"
                     htmlFor="flexRadioDefault2"
                   >
                     Tidak akan menghadiri acara
@@ -577,7 +577,7 @@ const Home: NextPage = () => {
                   initial={{ y: 100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                  className="bg-gray-500 text-white  px-4 py-2 mt-6 text-sm border-2 border-white"
+                  className="bg-gray-500 text-white px-4 py-2 mt-6 text-sm border-2 border-white"
                   onClick={sendMessage}
                 >
                   Kirim ke WA mempelai
