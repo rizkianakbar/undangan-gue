@@ -516,7 +516,7 @@ const Home: NextPage = () => {
           </div>
           <div className="section4 mx-auto flex flex-col items-center justify-center">
             <div className="text-center text-gray-500 font-formal px-5 mx-4">
-              <p className="m-7 text-2xl font-gaya text-[#E2C6C6] ">
+              <p className="mb-7 text-2xl font-gaya text-[#E2C6C6] ">
                 Konfirmasi Kehadiran melalui whatsapp mempelai
               </p>
               <div className="mx-auto bg-[#E2C6C6] p-6">
