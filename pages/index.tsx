@@ -585,6 +585,49 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
+          <div className="section5 mx-auto ">
+            <div className="text-center text-gray-500 font-formal px-5 mx-4">
+              <p className="mb-7 text-2xl font-gaya text-[#E2C6C6] ">
+                Konfirmasi Kehadiran melalui whatsapp mempelai
+              </p>
+              <div className="mx-auto bg-[#E2C6C6] p-6">
+                <input
+                  type="text"
+                  className="w-full p-3 my-2 bg-[#676f74] text-[#E2C6C6] input"
+                  placeholder="Isikan nama lengkap"
+                  onChange={(e) => {
+                    setName(e.target.value);
+                  }}
+                />
+                <textarea
+                  className="w-full p-3 my-2 h-[100px] bg-[#676f74] text-[#E2C6C6] input"
+                  placeholder="Berikan Ucapan dan Do'a"
+                  onChange={(e) => {
+                    setJumlah(e.target.value);
+                  }}
+                />
+
+                <motion.button
+                  initial={{ y: 100, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 1, duration: 0.8, type: 'tween' }}
+                  className="bg-gray-500 text-white px-4 py-2 mt-6 text-sm border-2 border-white"
+                >
+                  Kirim
+                </motion.button>
+                <hr className="text-white border-white border-2 my-4" />
+                <p className="mx-4">
+                  Ucapan selamat dan kebahagiaan bisa dari mana saja, Tanpa
+                  jabatan-jabatan tangan atau peluk-pelukan hangat, masih ada
+                  simpul-simpul senyum dan do&apos;a - do&apos;a yang kami
+                  harapkan
+                </p>
+                <p className="mx-4 font-gaya text-xl mt-4 font-bold">
+                  Hope to see you soon, stay safe and healty
+                </p>
+              </div>
+            </div>
+          </div>
         </Container>
       </PageSection>
     </>

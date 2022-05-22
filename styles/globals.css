@@ -64,10 +64,23 @@ a {
   background-color: #676f74;
   background-size: cover;
   /* position bottom */
-  background-position: bottom;
+  background-position: center;
 
   min-height: 100vh;
   margin: 0;
+  padding: 0;
+  margin-top: -2px;
+}
+
+.section5 {
+  background-color: #676f74;
+  background-size: cover;
+  /* position bottom */
+  background-position: center;
+
+  min-height: 90vh;
+  margin: 0;
+  margin-top: -2px;
   padding: 0;
 }
 
