@@ -16,6 +16,7 @@ import 'swiper/css/thumbs';
 const Home: NextPage = () => {
   const [isHadir, setIsHadir] = React.useState(false);
   const [name, setName] = React.useState('');
+  const [jumlah, setJumlah] = React.useState('');
 
   const fieldRef = React.useRef<HTMLInputElement>(null);
   const lazyRoot = React.useRef(null);
@@ -32,7 +33,7 @@ const Home: NextPage = () => {
   const sendMessage = () => {
     const num = 62895610381334;
     if (isHadir) {
-      window.location.href = `https://wa.me/${num}?text=Saya%20${name}%20Akan%20Menghadiri%20Acara`;
+      window.location.href = `https://wa.me/${num}?text=Saya%20${name}%20Akan%20Menghadiri%20Acara%20(%20${jumlah}%20Orang%20)`;
     } else {
       window.location.href = `https://wa.me/${num}?text=Saya%20${name}%20Tidak%20Akan%20Menghadiri%20Acara`;
     }
@@ -530,15 +531,12 @@ const Home: NextPage = () => {
                 <input
                   type="text"
                   className="w-full p-3 my-2 bg-[#676f74] text-[#E2C6C6] input"
-                  placeholder="Alamat"
-                />
-                <input
-                  type="text"
-                  className="w-full p-3 my-2 bg-[#676f74] text-[#E2C6C6] input"
                   placeholder="Jumlah"
+                  onChange={(e) => {
+                    setJumlah(e.target.value);
+                  }}
                 />
                 <p className="text-left mt-4">Konfirmasi</p>
-                {/* radio buttons */}
 
                 <div className="form-check text-left">
                   <input
