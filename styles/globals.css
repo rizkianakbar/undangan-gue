@@ -84,6 +84,17 @@ a {
   padding: 0;
 }
 
+.section6 {
+  background-image: url('../assets/img/bg-pink2.svg');
+  background-size: cover;
+  /* position bottom */
+  background-position: center;
+
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
 .background-pink {
   background-image: url('../assets/img/bg-pink.jpg');
   background-size: cover;

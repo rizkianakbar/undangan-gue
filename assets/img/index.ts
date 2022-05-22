@@ -10,6 +10,8 @@ import maps from './maps.png';
 import bgPink2 from './bg-pink2.svg';
 import play from './play.png';
 import pause from './pause.png';
+import bunga from './bunga.svg';
+import covid from './covid.svg';
 
 export {
   home,
@@ -24,4 +26,6 @@ export {
   bgPink2,
   play,
   pause,
+  bunga,
+  covid,
 };

@@ -4,7 +4,16 @@ import { Container } from '@/components/layout/container';
 import type { NextPage } from 'next';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { manCover, maps, pause, play, ring, womenCover } from '../assets/img';
+import {
+  bunga,
+  covid,
+  manCover,
+  maps,
+  pause,
+  play,
+  ring,
+  womenCover,
+} from '../assets/img';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Navigation, Thumbs } from 'swiper';
 
@@ -436,7 +445,6 @@ const Home: NextPage = () => {
               </Swiper>
             </div>
           </div>
-
           <div className="section3 mx-auto">
             <div className="text-center text-gray-500 font-formal p-5 mx-4">
               <p className="m-10 text-4xl font-gaya text-pink-200 text-shadow">
@@ -639,6 +647,72 @@ const Home: NextPage = () => {
                   Hope to see you soon, stay safe and healty
                 </p>
               </div>
+            </div>
+          </div>
+          <div className="section6 mx-auto flex flex-col items-center justify-center">
+            <div className="text-center font-formal px-5 mx-4 bg-[#676f74] py-10 text-[#E2C6C6] mx-10">
+              <Image
+                src={bunga}
+                alt="bunga"
+                width="300"
+                height="300"
+                className="py-5"
+              />
+              <p>
+                Dan diantara tanda-tanda kekuasaan-Nya diciptakan-Nya untukmu
+                pasangan hidup dari jenismu sendiri supaya kamu mendapat
+                ketenangan hati dan dijadikan-Nya kasih sayang diantara kamu.
+                Sesungguhnya yang demikian menjadi tanda-tanda kebesaran-Nya
+                bagi orang-orang yang berfikir.
+              </p>
+              <p className="mt-4">( QS. Ar-Ruum : 12 )</p>
+            </div>
+          </div>{' '}
+          <div className="section6 mx-auto flex flex-col items-center justify-center">
+            <div className="text-center font-formal px-5 bg-[#676f74] py-10 text-[#E2C6C6] mx-10">
+              <p>
+                Jangan ragu untuk datang, kami sudah berkoordinasi dengan semua
+                pihak terkait pencegahan penularan COVID-19. Acara kami akan
+                mengikuti segala prosedur protokol kesehatan untuk mencegah
+                penularan.
+              </p>
+              <u className="">
+                So, don&apos;t be panic, we look forward to seeing you there!
+              </u>
+              <br />
+              <br />
+              <Image src={covid} alt="covid" width="200" height="200" />
+              <br />
+              <br />
+              <p>
+                Bagi para tamu undanga diharapkan mengikuti protokol kesehatan
+                untuk mencegah COVID-19
+              </p>
+            </div>
+          </div>
+          <div className="section6 mx-auto flex flex-col items-center justify-center">
+            <div className="text-center font-formal px-5 bg-[#676f74] py-10 text-[#E2C6C6] mx-10">
+              <p>
+                Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga
+                apabila Bapak/Ibu/Saudara/i berkenan hadir memberikan do&apos;a
+                restu kepada kedua mempelai.
+              </p>
+              <p>
+                Atas kehadiran serta do&apos;a restunya kami mengucapkan terima
+                kasih.
+              </p>
+              <p className="font-gaya text-xl mt-4">Wassalamu&apos;alaikum</p>
+              <p className="font-gaya text-xl mb-10">
+                Warahmatullahi Wabarakatuh
+              </p>
+
+              <p>Kel. H. Asep Drajat</p>
+              <p className=" mb-5">Hj. Noneng Supartika</p>
+
+              <p>Kel. Agus Dadang Hidayat, S.Pd.I</p>
+              <p className=" mb-10">Susmiati Ramini</p>
+
+              <p className="font-gaya text-4xl">Vinni & Rifqi</p>
             </div>
           </div>
           {/* make a floating button on bottom left fixed */}
