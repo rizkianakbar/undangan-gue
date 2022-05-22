@@ -12,6 +12,7 @@ import play from './play.png';
 import pause from './pause.png';
 import bunga from './bunga.svg';
 import covid from './covid.svg';
+import bgGray2 from './bg-gray2.svg';
 
 export {
   home,
@@ -28,4 +29,5 @@ export {
   pause,
   bunga,
   covid,
+  bgGray2,
 };

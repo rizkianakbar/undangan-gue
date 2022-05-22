@@ -53,7 +53,7 @@ const Home: NextPage = () => {
   };
 
   const sendMessage = () => {
-    const num = 6281322500453;
+    const num = 6282217012055;
     if (isHadir) {
       window.location.href = `https://wa.me/${num}?text=Saya%20${name}%20Akan%20Menghadiri%20Acara%20(%20${jumlah}%20Orang%20)`;
     } else {
@@ -112,64 +112,62 @@ const Home: NextPage = () => {
             className="section2 mx-auto flex flex-col items-center justify-center"
             ref={fieldRef}
           >
-            <div className="text-center text-gray-500 font-formal pt-5">
-              <div className="mx-4 px-2 background-pink py-5 rounded-xl shadow-lg">
-                <motion.em
-                  initial={{ y: 100, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                  className="mb-4 text-sm block"
-                >
-                  Bismillahirrahmanirrahim
-                </motion.em>{' '}
-                <motion.p
-                  initial={{ y: 100, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                  className="mb-4 text-sm block"
-                >
-                  Dengan memohon Rahmat dan Ridho Allah SWT, kami bermaksud
-                  menyelenggarakan resepsi pernikahan putra-putri kami.
-                </motion.p>
-                <Image
-                  src={womenCover}
-                  alt="cover-image"
-                  width="263px"
-                  height="223px"
-                />
-                <p className="font-gaya text-3xl mb-4">Vinni Haiva Azkani</p>
-                <motion.p
-                  initial={{ y: 100, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                  className="mb-7 text-sm"
-                >
-                  Putri pertama dari Bapak H. Asep Drajat & Ibu Hj. Neneng
-                  Suparika
-                </motion.p>
-                <p className="font-gaya text-3xl my-2">&</p>
-                <Image
-                  src={manCover}
-                  alt="cover-image"
-                  width="263px"
-                  height="223px"
-                />
-                <p className="font-gaya text-3xl mb-4">
-                  Rifqi Fariz Radifan, S.T
-                </p>
-                <motion.p
-                  initial={{ y: 100, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                  className="mb-10 text-sm"
-                >
-                  Putri pertama dari Bapak Agus Dadang Hidayat, S.Pd.I & Ibu
-                  Susmiati Ramini
-                </motion.p>
-              </div>
+            <div className="text-center text-[#E2C6C6] font-formal pt-5 mx-4">
+              <motion.em
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
+                className="mb-4 text-sm block"
+              >
+                Bismillahirrahmanirrahim
+              </motion.em>{' '}
+              <motion.p
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
+                className="mb-4 text-sm block"
+              >
+                Dengan memohon Rahmat dan Ridho Allah SWT, kami bermaksud
+                menyelenggarakan resepsi pernikahan putra-putri kami.
+              </motion.p>
+              <Image
+                src={womenCover}
+                alt="cover-image"
+                width="263px"
+                height="223px"
+              />
+              <p className="font-gaya text-3xl mb-4">Vinni Haiva Azkani</p>
+              <motion.p
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
+                className="mb-7 text-sm"
+              >
+                Putri pertama dari Bapak H. Asep Drajat & Ibu Hj. Neneng
+                Suparika
+              </motion.p>
+              <p className="font-gaya text-3xl my-2">&</p>
+              <Image
+                src={manCover}
+                alt="cover-image"
+                width="263px"
+                height="223px"
+              />
+              <p className="font-gaya text-3xl mb-4">
+                Rifqi Fariz Radifan, S.T
+              </p>
+              <motion.p
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
+                className="mb-10 text-sm"
+              >
+                Putri pertama dari Bapak Agus Dadang Hidayat, S.Pd.I & Ibu
+                Susmiati Ramini
+              </motion.p>
             </div>
           </div>
-          <div className="section2 mx-auto flex flex-col items-center justify-center">
+          <div className="section6 mx-auto flex flex-col items-center justify-center">
             <div className="text-center text-gray-500 font-formal py-5 ">
               <motion.p
                 initial={{ y: 100, opacity: 0 }}
@@ -227,7 +225,7 @@ const Home: NextPage = () => {
               </motion.p>
             </div>
           </div>
-          <div className="section2 mx-auto flex flex-col items-center justify-center">
+          <div className="section6 mx-auto flex flex-col items-center justify-center">
             <div className="text-center text-gray-500 font-formal p-5">
               <motion.p
                 initial={{ x: 100, opacity: 0 }}
@@ -267,9 +265,9 @@ const Home: NextPage = () => {
               </motion.button>
             </div>
           </div>
-          <div className="section2 mx-auto">
-            <div className="text-center text-gray-500 font-formal py-5 mx-4">
-              <p className="m-10 text-4xl font-gaya">Gallery</p>
+          <div className="section7 mx-auto">
+            <div className="text-center text-[#E2C6C6] font-formal py-5 mx-4">
+              <p className="m-10 text-4xl font-gaya">Our Gallery</p>
               <Swiper
                 loop={false}
                 spaceBetween={10}
@@ -284,7 +282,6 @@ const Home: NextPage = () => {
                     alt="cover-image"
                     width="500"
                     height="500"
-                    className="rounded-lg shadow-lg"
                     blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
                     placeholder="blur"
                   />
@@ -296,7 +293,6 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="LHEpD@0000~q^-00%N?bWXV@%MIU"
-                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -307,7 +303,6 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="|JHM1Mx]X8t7ITozaeaeR%_4%NM_WBozRjWBj[ofx[niRjofjZaytRazax?HxuRjfkaekCkCofWBR4xvV@ayf+j[V@RjkC%2V@o#ogRjRjozj[ae%gaeWBoft7t8ofj[j[%Nt7t8aeofj[ofkCozjYoftRaeogayayV@WB"
-                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -318,7 +313,6 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
-                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -329,7 +323,6 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
-                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -340,7 +333,6 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
-                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -351,7 +343,6 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
-                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -371,7 +362,6 @@ const Home: NextPage = () => {
                     alt="cover-image"
                     width="500"
                     height="500"
-                    className="rounded-lg shadow-lg"
                     blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
                     placeholder="blur"
                   />
@@ -383,7 +373,6 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="LHEpD@0000~q^-00%N?bWXV@%MIU"
-                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -394,7 +383,6 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="|JHM1Mx]X8t7ITozaeaeR%_4%NM_WBozRjWBj[ofx[niRjofjZaytRazax?HxuRjfkaekCkCofWBR4xvV@ayf+j[V@RjkC%2V@o#ogRjRjozj[ae%gaeWBoft7t8ofj[j[%Nt7t8aeofj[ofkCozjYoftRaeogayayV@WB"
-                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -405,7 +393,6 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
-                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -416,7 +403,6 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
-                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -427,7 +413,6 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
-                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>
@@ -438,7 +423,6 @@ const Home: NextPage = () => {
                     width="500"
                     height="500"
                     blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
-                    className="rounded-lg shadow-lg"
                     placeholder="blur"
                   />
                 </SwiperSlide>

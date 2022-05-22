@@ -41,7 +41,7 @@ const OpenInvitation = () => {
   };
 
   return (
-    <div className="z-50 section2 mx-auto flex flex-col items-center justify-center">
+    <div className="z-50 section0 mx-auto flex flex-col items-center justify-center">
       <Image src={cover} alt="cover-image" width="243px" height="280px" />
       <motion.div
         variants={containerVariants}
