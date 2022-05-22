@@ -607,9 +607,9 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="section5 mx-auto ">
-            <div className="text-center text-gray-500 font-formal px-5 mx-4">
+            <div className="text-center text-gray-500 font-formal px-5 mx-4 mb-10">
               <p className="mb-7 text-2xl font-gaya text-[#E2C6C6] ">
-                Konfirmasi Kehadiran melalui whatsapp mempelai
+                Ucapan & Do&apos;a
               </p>
               <div className="mx-auto bg-[#E2C6C6] p-6">
                 <input
