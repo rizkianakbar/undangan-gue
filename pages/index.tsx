@@ -53,7 +53,7 @@ const Home: NextPage = () => {
   };
 
   const sendMessage = () => {
-    const num = 62895610381334;
+    const num = 6281322500453;
     if (isHadir) {
       window.location.href = `https://wa.me/${num}?text=Saya%20${name}%20Akan%20Menghadiri%20Acara%20(%20${jumlah}%20Orang%20)`;
     } else {
