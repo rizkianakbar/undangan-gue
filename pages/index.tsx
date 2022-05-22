@@ -685,7 +685,7 @@ const Home: NextPage = () => {
                   harapkan
                 </p>
                 <p className="mx-4 font-gaya text-2xl mt-4 font-bold">
-                  Hope to see you soon, stay safe and healty
+                  Hope to see you soon, <br /> stay safe and healty
                 </p>
               </div>
             </div>
