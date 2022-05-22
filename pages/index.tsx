@@ -200,7 +200,7 @@ const Home: NextPage = () => {
                 className="mb-7 text-lg font-condensed leading-6"
               >
                 Putri pertama dari <br /> Bapak H. Asep Drajat & <br /> Ibu Hj.
-                Neneng Suparika
+                Noneng Supartika
               </motion.p>
               <p className="font-gaya text-6xl my-6">&</p>
               <Image
