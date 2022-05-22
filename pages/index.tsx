@@ -414,6 +414,9 @@ const Home: NextPage = () => {
 
           <div className="section3 mx-auto">
             <div className="text-center text-gray-500 font-formal p-5 mx-4">
+              <p className="m-10 text-4xl font-gaya text-pink-200 text-shadow">
+                Cerita Cinta Kita
+              </p>
               <ol className="relative border-l-2 border-pink-200 ">
                 <li className="mb-10 ml-6">
                   <span className="flex absolute -left-3 justify-center items-center w-6 h-6 rounded-full bg-pink-200">
