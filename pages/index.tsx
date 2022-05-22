@@ -133,8 +133,8 @@ const Home: NextPage = () => {
               <Image
                 src={womenCover}
                 alt="cover-image"
-                width="263px"
-                height="223px"
+                width="200px"
+                height="230px"
               />
               <p className="font-gaya text-3xl mb-4">Vinni Haiva Azkani</p>
               <motion.p
