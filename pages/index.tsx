@@ -14,7 +14,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
 const Home: NextPage = () => {
-  const [isHadir, setIsHadir] = React.useState(false);
+  const [isHadir, setIsHadir] = React.useState(true);
   const [name, setName] = React.useState('');
   const [jumlah, setJumlah] = React.useState('');
 
