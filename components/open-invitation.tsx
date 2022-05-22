@@ -53,8 +53,10 @@ const OpenInvitation = () => {
         <p className="font-gaya text-5xl mb-6">
           Vinni <span className="text-pink-100">&</span> Rifqi
         </p>
-        <p className="text-lg font-condensed">Kepada Yth</p>
-        <p className="mb-1 text-lg font-condensed">Bapak/Ibu/Saudara/i</p>
+        <p className="text-lg font-condensed leading-5">Kepada Yth</p>
+        <p className="mb-1 text-lg font-condensed leading-5">
+          Bapak/Ibu/Saudara/i
+        </p>
         <div className="w-full h-10 p-4 bg-white rounded-lg">
           <p className="mt-[-10px] font-bold">{name}</p>
         </div>
