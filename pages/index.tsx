@@ -503,7 +503,7 @@ const Home: NextPage = () => {
                   <div className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600">
                     <div className="justify-between items-center mb-3 sm:flex">
                       <time className="mb-1 text-3xl font-bold font-condensed text-white sm:order-last sm:mb-0">
-                        Oktober 2018
+                        Oktober 2015
                       </time>
                     </div>
                     <div className="leading-5 bg-transparent-soft font-condensed p-3 text-lg font-normal bg-gray-50 rounded-lg border border-gray-200 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300">
@@ -543,7 +543,7 @@ const Home: NextPage = () => {
                   <div className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600">
                     <div className="justify-between items-center mb-3 sm:flex">
                       <time className="mb-1 text-3xl font-bold font-condensed text-white sm:order-last sm:mb-0">
-                        30 Desember 2021
+                        30 Januari 2021
                       </time>
                     </div>
                     <div className=" leading-5 bg-transparent-soft font-condensed p-3 text-lg font-normal bg-gray-50 rounded-lg border border-gray-200 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300">
