@@ -514,8 +514,8 @@ const Home: NextPage = () => {
               </ol>
             </div>
           </div>
-          <div className="section4 mx-auto">
-            <div className="text-center text-gray-500 font-formal p-5 mx-4">
+          <div className="section4 mx-auto flex flex-col items-center justify-center">
+            <div className="text-center text-gray-500 font-formal px-5 mx-4">
               <p className="m-7 text-2xl font-gaya text-[#E2C6C6] ">
                 Konfirmasi Kehadiran melalui whatsapp mempelai
               </p>
@@ -536,7 +536,7 @@ const Home: NextPage = () => {
                     setJumlah(e.target.value);
                   }}
                 />
-                <p className="text-left mt-4">Konfirmasi</p>
+                <p className="text-left mt-8">Konfirmasi</p>
 
                 <div className="form-check text-left">
                   <input
