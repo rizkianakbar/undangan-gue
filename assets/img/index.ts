@@ -7,6 +7,7 @@ import manCover from './man-cover.png';
 import womenCover from './women-cover.png';
 import ring from './ring.png';
 import maps from './maps.png';
+import bgPink2 from './bg-pink2.svg';
 
 export {
   home,
@@ -18,4 +19,5 @@ export {
   womenCover,
   ring,
   maps,
+  bgPink2,
 };

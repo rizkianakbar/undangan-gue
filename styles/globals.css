@@ -60,6 +60,16 @@ a {
   margin: 0;
   padding: 0;
 }
+.section4 {
+  background-color: #676f74;
+  background-size: cover;
+  /* position bottom */
+  background-position: bottom;
+
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
 
 .background-pink {
   background-image: url('../assets/img/bg-pink.jpg');
@@ -139,4 +149,13 @@ a {
 
 .bg-transparent-soft {
   background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.input {
+  border: none;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #e2c6c6;
 }

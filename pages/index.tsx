@@ -14,6 +14,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
 const Home: NextPage = () => {
+  const [isHadir, setIsHadir] = React.useState(false);
+  const [name, setName] = React.useState('');
+
   const fieldRef = React.useRef<HTMLInputElement>(null);
   const lazyRoot = React.useRef(null);
   const scrollDown = () => {
@@ -26,6 +29,14 @@ const Home: NextPage = () => {
     window.open('https://goo.gl/maps/WTjvSdUKmc92rsWbA', '_blank');
   };
 
+  const sendMessage = () => {
+    const num = 62895610381334;
+    if (isHadir) {
+      window.location.href = `https://wa.me/${num}?text=Saya%20${name}%20Akan%20Menghadiri%20Acara`;
+    } else {
+      window.location.href = `https://wa.me/${num}?text=Saya%20${name}%20Tidak%20Akan%20Menghadiri%20Acara`;
+    }
+  };
   return (
     <>
       <PageSection>
@@ -500,6 +511,80 @@ const Home: NextPage = () => {
                   </div>
                 </li>
               </ol>
+            </div>
+          </div>
+          <div className="section4 mx-auto">
+            <div className="text-center text-gray-500 font-formal p-5 mx-4">
+              <p className="m-7 text-2xl font-gaya text-[#E2C6C6] ">
+                Konfirmasi Kehadiran melalui whatsapp mempelai
+              </p>
+              <div className="mx-auto bg-[#E2C6C6] p-6">
+                <input
+                  type="text"
+                  className="w-full p-3 my-2 bg-[#676f74] text-[#E2C6C6] input"
+                  placeholder="Isikan nama lengkap"
+                  onChange={(e) => {
+                    setName(e.target.value);
+                  }}
+                />
+                <input
+                  type="text"
+                  className="w-full p-3 my-2 bg-[#676f74] text-[#E2C6C6] input"
+                  placeholder="Alamat"
+                />
+                <input
+                  type="text"
+                  className="w-full p-3 my-2 bg-[#676f74] text-[#E2C6C6] input"
+                  placeholder="Jumlah"
+                />
+                <p className="text-left mt-4">Konfirmasi</p>
+                {/* radio buttons */}
+
+                <div className="form-check text-left">
+                  <input
+                    className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                    onClick={() => {
+                      setIsHadir(true);
+                    }}
+                  />
+                  <label
+                    className="form-check-label inline-block"
+                    htmlFor="flexRadioDefault1"
+                  >
+                    Akan menghadiri acara
+                  </label>
+                </div>
+                <div className="form-check text-left ">
+                  <input
+                    className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                    onClick={() => {
+                      setIsHadir(false);
+                    }}
+                    checked
+                  />
+                  <label
+                    className="form-check-label inline-block "
+                    htmlFor="flexRadioDefault2"
+                  >
+                    Tidak akan menghadiri acara
+                  </label>
+                </div>
+                <motion.button
+                  initial={{ y: 100, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 1, duration: 0.8, type: 'tween' }}
+                  className="bg-gray-500 text-white  px-4 py-2 mt-6 text-sm border-2 border-white"
+                  onClick={sendMessage}
+                >
+                  Kirim ke WA mempelai
+                </motion.button>
+              </div>
             </div>
           </div>
         </Container>
