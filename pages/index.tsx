@@ -488,7 +488,7 @@ const Home: NextPage = () => {
           </div>
           <div className="section3 mx-auto">
             <div className="text-center text-gray-500 font-formal p-5 mx-4">
-              <p className="m-10 text-5xl font-gaya text-pink-200 text-shadow">
+              <p className="m-10 text-4xl font-gaya text-pink-200 text-shadow">
                 Cerita Cinta Kita
               </p>
               <ol className="relative border-l-2 border-pink-200">
@@ -502,7 +502,7 @@ const Home: NextPage = () => {
                   </span>
                   <div className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600">
                     <div className="justify-between items-center mb-3 sm:flex">
-                      <time className="mb-1 text-4xl font-bold font-condensed text-white sm:order-last sm:mb-0">
+                      <time className="mb-1 text-3xl font-bold font-condensed text-white sm:order-last sm:mb-0">
                         Oktober 2018
                       </time>
                     </div>
@@ -522,7 +522,7 @@ const Home: NextPage = () => {
                   </span>
                   <div className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600 ">
                     <div className="justify-between items-center mb-3 sm:flex">
-                      <time className="mb-1 text-4xl font-bold font-condensed text-white sm:order-last sm:mb-0">
+                      <time className="mb-1 text-3xl font-bold font-condensed text-white sm:order-last sm:mb-0">
                         21 December 2015
                       </time>
                     </div>
@@ -542,7 +542,7 @@ const Home: NextPage = () => {
                   </span>
                   <div className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600">
                     <div className="justify-between items-center mb-3 sm:flex">
-                      <time className="mb-1 text-4xl font-bold font-condensed text-white sm:order-last sm:mb-0">
+                      <time className="mb-1 text-3xl font-bold font-condensed text-white sm:order-last sm:mb-0">
                         30 Desember 2021
                       </time>
                     </div>
@@ -563,7 +563,7 @@ const Home: NextPage = () => {
                   </span>
                   <div className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600">
                     <div className="justify-between items-center mb-3 sm:flex">
-                      <time className="mb-1 text-4xl font-bold font-condensed text-white sm:order-last sm:mb-0">
+                      <time className="mb-1 text-3xl font-bold font-condensed text-white sm:order-last sm:mb-0">
                         29 Mei 2022
                       </time>
                     </div>
