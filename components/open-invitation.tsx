@@ -65,6 +65,10 @@ const OpenInvitation = () => {
           className="animate-bounce bg-gray-500 text-white uppercase px-4 py-2 mt-6 text-sm border-2 border-white"
           onClick={() => {
             setOpen(true);
+            const audio = new Audio(
+              'https://res.cloudinary.com/rizkianakbar/video/upload/v1653213746/songs_zmdbbr.mp3'
+            );
+            audio.play();
             launchIntoFullscreen(document.documentElement);
           }}
         >
