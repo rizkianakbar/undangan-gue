@@ -8,6 +8,8 @@ import womenCover from './women-cover.png';
 import ring from './ring.png';
 import maps from './maps.png';
 import bgPink2 from './bg-pink2.svg';
+import play from './play.png';
+import pause from './pause.png';
 
 export {
   home,
@@ -20,4 +22,6 @@ export {
   ring,
   maps,
   bgPink2,
+  play,
+  pause,
 };

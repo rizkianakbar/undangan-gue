@@ -8,9 +8,16 @@ export const AppContext = React.createContext<any>(null);
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [open, setOpen] = React.useState(false);
+  const [audio] = React.useState(
+    typeof Audio !== 'undefined' &&
+      new Audio(
+        'https://res.cloudinary.com/rizkianakbar/video/upload/v1653213746/songs_zmdbbr.mp3'
+      )
+  );
   const state = {
     open,
     setOpen,
+    audio,
   };
   return (
     <AppContext.Provider value={state}>
