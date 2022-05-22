@@ -728,7 +728,7 @@ const Home: NextPage = () => {
               <br />
               <br />
               <p className="font-condensed text-lg leading-5">
-                Bagi para tamu undanga diharapkan mengikuti protokol kesehatan
+                Bagi para tamu undangan diharapkan mengikuti protokol kesehatan
                 untuk mencegah COVID-19
               </p>
             </div>
