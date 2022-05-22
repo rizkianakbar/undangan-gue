@@ -70,7 +70,7 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-4 text-lg text-shadow"
+                className="mb-4 text-2xl text-shadow font-condensed"
               >
                 The Wedding Of
               </motion.p>
@@ -86,7 +86,7 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.5, duration: 0.8, type: 'tween' }}
-                className="text-lg mt-[100%] text-shadow-soft mb-10"
+                className="text-xl  text-shadow-soft mb-10 font-condensed mb-[100%]"
               >
                 Minggu, 29 Mei 2022
               </motion.p>
@@ -117,18 +117,29 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-4 text-sm block"
+                className=" text-lg block font-condensed leading-5"
               >
                 Bismillahirrahmanirrahim
-              </motion.em>{' '}
+              </motion.em>
+              <motion.em
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
+                className=" text-lg block font-condensed my-4 leading-5"
+              >
+                Assalamu&apos;alaikum Wr. Wb.
+              </motion.em>
               <motion.p
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-4 text-sm block"
+                className="mb-4 text-lg block font-condensed leading-6"
               >
-                Dengan memohon Rahmat dan Ridho Allah SWT, kami bermaksud
-                menyelenggarakan resepsi pernikahan putra-putri kami.
+                Dengan memohon Rahmat dan Ridho Allah SWT,
+                <br />
+                kami bermaksud menyelenggarakan resepsi
+                <br />
+                pernikahan putra-putri kami.
               </motion.p>
               <Image
                 src={womenCover}
@@ -136,22 +147,24 @@ const Home: NextPage = () => {
                 width="200px"
                 height="230px"
               />
-              <p className="font-gaya text-3xl mb-4">Vinni Haiva Azkani</p>
+              <p className="font-gaya text-3xl mb-4 tracking-tighter">
+                apt. Vinni Haiva Azhari, S.Fam
+              </p>
               <motion.p
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-7 text-sm"
+                className="mb-7 text-lg font-condensed leading-6"
               >
-                Putri pertama dari Bapak H. Asep Drajat & Ibu Hj. Neneng
-                Suparika
+                Putri pertama dari <br /> Bapak H. Asep Drajat & <br /> Ibu Hj.
+                Neneng Suparika
               </motion.p>
-              <p className="font-gaya text-3xl my-2">&</p>
+              <p className="font-gaya text-6xl my-6">&</p>
               <Image
                 src={manCover}
                 alt="cover-image"
-                width="263px"
-                height="223px"
+                width="200px"
+                height="230px"
               />
               <p className="font-gaya text-3xl mb-4">
                 Rifqi Fariz Radifan, S.T
@@ -160,10 +173,10 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-10 text-sm"
+                className="mb-10 text-lg font-condensed leading-6"
               >
-                Putri pertama dari Bapak Agus Dadang Hidayat, S.Pd.I & Ibu
-                Susmiati Ramini
+                Putri pertama dari <br /> Bapak Agus Dadang Hidayat, S.Pd.I &
+                <br /> Ibu Susmiati Ramini
               </motion.p>
             </div>
           </div>
@@ -173,7 +186,7 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-4 text-4xl font-gaya"
+                className="mb-4 text-5xl font-gaya"
               >
                 Akad nikah
               </motion.p>
@@ -181,7 +194,7 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="text-lg font-gaya"
+                className="text-2xl font-condensed"
               >
                 Minggu, 29 Mei 2022
               </motion.p>
@@ -189,21 +202,21 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="text-lg font-gaya"
+                className="text-lg font-condensed"
               >
                 Pukul 08.00 WIB
               </motion.p>
               <Image
                 src={ring}
                 alt="cover-image"
-                width="263px"
-                height="223px"
+                width="350px"
+                height="200px"
               ></Image>
               <motion.p
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-4 text-4xl font-gaya"
+                className="mb-4 text-5xl font-gaya"
               >
                 Resepsi
               </motion.p>
@@ -211,7 +224,7 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="text-lg font-gaya"
+                className="text-2xl font-condensed"
               >
                 Minggu, 29 Mei 2022
               </motion.p>
@@ -219,7 +232,7 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="text-lg font-gaya"
+                className="text-lg font-condensed"
               >
                 Pukul 11.00 s.d. 14.00 WIB
               </motion.p>
@@ -231,9 +244,9 @@ const Home: NextPage = () => {
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-10 text-4xl font-gaya"
+                className="my-10 text-5xl font-gaya"
               >
-                Lokasi Pernikahan
+                Lokasi <br /> Pernikahan
               </motion.p>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15839.506586275318!2d107.5347955!3d-7.0237829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xec5c26dd6abbbfb4!2sSutan%20Raja%20Hotel%20and%20Convention%20Centre!5e0!3m2!1sen!2sid!4v1653124996353!5m2!1sen!2sid"
@@ -249,7 +262,7 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="text-sm px-6"
+                className="text-lg px-6 font-condensed leading-5"
               >
                 Sutan Raja Hotel Convention Centere Jl. Raya Soreang Km 17
                 Soreang Kab. Bandung
@@ -267,7 +280,7 @@ const Home: NextPage = () => {
           </div>
           <div className="section7 mx-auto">
             <div className="text-center text-[#E2C6C6] font-formal py-5 mx-4">
-              <p className="m-10 text-4xl font-gaya">Our Gallery</p>
+              <p className="m-10 text-5xl font-gaya">Our Gallery</p>
               <Swiper
                 loop={false}
                 spaceBetween={10}
@@ -431,7 +444,7 @@ const Home: NextPage = () => {
           </div>
           <div className="section3 mx-auto">
             <div className="text-center text-gray-500 font-formal p-5 mx-4">
-              <p className="m-10 text-4xl font-gaya text-pink-200 text-shadow">
+              <p className="m-10 text-5xl font-gaya text-pink-200 text-shadow">
                 Cerita Cinta Kita
               </p>
               <ol className="relative border-l-2 border-pink-200 ">
@@ -445,13 +458,13 @@ const Home: NextPage = () => {
                   </span>
                   <div className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600">
                     <div className="justify-between items-center mb-3 sm:flex">
-                      <time className="mb-1 text-xl font-gaya text-white sm:order-last sm:mb-0">
+                      <time className="mb-1 text-4xl font-bold font-condensed text-white sm:order-last sm:mb-0">
                         Oktober 2018
                       </time>
                     </div>
-                    <div className="bg-transparent-soft p-3 text-xs  font-normal text-gray-500 bg-gray-50 rounded-lg border border-gray-200 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300">
-                      Awal pertemuan tidak terduga di Kampus Universitas Jendral
-                      Achmad Yani
+                    <div className="leading-5 bg-transparent-soft font-condensed p-3 text-lg font-normal bg-gray-50 rounded-lg border border-gray-200 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300">
+                      Awal pertemuan tidak terduga <br /> di Kampus Universitas
+                      Jendral Achmad Yani
                     </div>
                   </div>
                 </li>
@@ -463,13 +476,13 @@ const Home: NextPage = () => {
                       alt="Jese Leos image"
                     />
                   </span>
-                  <div className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600">
+                  <div className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600 ">
                     <div className="justify-between items-center mb-3 sm:flex">
-                      <time className="mb-1 text-xl font-gaya text-white sm:order-last sm:mb-0">
+                      <time className="mb-1 text-4xl font-bold font-condensed text-white sm:order-last sm:mb-0">
                         21 December 2015
                       </time>
                     </div>
-                    <div className="bg-transparent-soft p-3 text-xs  font-normal text-gray-500 bg-gray-50 rounded-lg border border-gray-200 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300">
+                    <div className="leading-5 bg-transparent-soft font-condensed p-3 text-lg font-normal bg-gray-50 rounded-lg border border-gray-200 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300">
                       Dengan segala ceritanya, kami memutuskan untuk memiliki
                       hubungan yang lebih dekat
                     </div>
@@ -485,11 +498,11 @@ const Home: NextPage = () => {
                   </span>
                   <div className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600">
                     <div className="justify-between items-center mb-3 sm:flex">
-                      <time className="mb-1 text-xl font-gaya text-white sm:order-last sm:mb-0">
+                      <time className="mb-1 text-4xl font-bold font-condensed text-white sm:order-last sm:mb-0">
                         30 Desember 2021
                       </time>
                     </div>
-                    <div className="bg-transparent-soft p-3 text-xs  font-normal text-gray-500 bg-gray-50 rounded-lg border border-gray-200 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300">
+                    <div className=" leading-5 bg-transparent-soft font-condensed p-3 text-lg font-normal bg-gray-50 rounded-lg border border-gray-200 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300">
                       Setelah sekian lama menjalin hubungan manis pahit yang
                       telah di jalani kami memutuskan untuk ke langkah yang
                       selanjutnya dan melakukan khitbah
@@ -506,11 +519,11 @@ const Home: NextPage = () => {
                   </span>
                   <div className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600">
                     <div className="justify-between items-center mb-3 sm:flex">
-                      <time className="mb-1 text-xl font-gaya text-white sm:order-last sm:mb-0">
-                        29 Mei 202w
+                      <time className="mb-1 text-4xl font-bold font-condensed text-white sm:order-last sm:mb-0">
+                        29 Mei 2022
                       </time>
                     </div>
-                    <div className="bg-transparent-soft p-3 text-xs  font-normal text-gray-500 bg-gray-50 rounded-lg border border-gray-200 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300">
+                    <div className="leading-5 bg-transparent-soft font-condensed p-3 text-lg font-normal bg-gray-50 rounded-lg border border-gray-200 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300">
                       Dan pada akhirnya kami memantapkan untuk melangsungkan
                       pernikahan, semoga kami selalu bersama selamanya
                     </div>
@@ -521,10 +534,10 @@ const Home: NextPage = () => {
           </div>
           <div className="section4 mx-auto flex flex-col items-center justify-center">
             <div className="text-center text-gray-500 font-formal px-5 mx-4">
-              <p className="mb-7 text-2xl font-gaya text-[#E2C6C6] ">
+              <p className="mb-7 text-4xl font-gaya text-[#E2C6C6] ">
                 Konfirmasi Kehadiran melalui whatsapp mempelai
               </p>
-              <div className="mx-auto bg-[#E2C6C6] p-6">
+              <div className="mx-auto bg-[#E2C6C6] p-6 font-condensed text-lg">
                 <input
                   type="text"
                   className="w-full p-3 my-2 bg-[#676f74] text-[#E2C6C6] input"
@@ -541,7 +554,7 @@ const Home: NextPage = () => {
                     setJumlah(e.target.value);
                   }}
                 />
-                <p className="text-left mt-8">Konfirmasi</p>
+                <p className="text-left text-xl mt-8">Konfirmasi</p>
 
                 <div className="form-check text-left">
                   <input
@@ -555,7 +568,7 @@ const Home: NextPage = () => {
                     checked
                   />
                   <label
-                    className="form-check-label inline-block text-sm"
+                    className="form-check-label inline-block text-lg"
                     htmlFor="flexRadioDefault1"
                   >
                     Akan menghadiri acara
@@ -572,7 +585,7 @@ const Home: NextPage = () => {
                     }}
                   />
                   <label
-                    className="form-check-label inline-block text-sm"
+                    className="form-check-label inline-block text-lg"
                     htmlFor="flexRadioDefault2"
                   >
                     Tidak akan menghadiri acara
@@ -592,10 +605,10 @@ const Home: NextPage = () => {
           </div>
           <div className="section5 mx-auto ">
             <div className="text-center text-gray-500 font-formal px-5 mx-4 mb-10">
-              <p className="mb-7 text-2xl font-gaya text-[#E2C6C6] ">
+              <p className="mb-7 text-4xl font-gaya text-[#E2C6C6] ">
                 Ucapan & Do&apos;a
               </p>
-              <div className="mx-auto bg-[#E2C6C6] p-6">
+              <div className="mx-auto bg-[#E2C6C6] p-6 font-condensed text-lg">
                 <input
                   type="text"
                   className="w-full p-3 my-2 bg-[#676f74] text-[#E2C6C6] input"
@@ -621,13 +634,13 @@ const Home: NextPage = () => {
                   Kirim
                 </motion.button>
                 <hr className="text-white border-white border-2 my-4" />
-                <p className="mx-4">
+                <p className="mx-4 leading-5">
                   Ucapan selamat dan kebahagiaan bisa dari mana saja, Tanpa
                   jabatan-jabatan tangan atau peluk-pelukan hangat, masih ada
                   simpul-simpul senyum dan do&apos;a - do&apos;a yang kami
                   harapkan
                 </p>
-                <p className="mx-4 font-gaya text-xl mt-4 font-bold">
+                <p className="mx-4 font-gaya text-2xl mt-4 font-bold">
                   Hope to see you soon, stay safe and healty
                 </p>
               </div>
@@ -642,25 +655,27 @@ const Home: NextPage = () => {
                 height="300"
                 className="py-5"
               />
-              <p>
+              <p className="font-condensed text-lg leading-5">
                 Dan diantara tanda-tanda kekuasaan-Nya diciptakan-Nya untukmu
                 pasangan hidup dari jenismu sendiri supaya kamu mendapat
                 ketenangan hati dan dijadikan-Nya kasih sayang diantara kamu.
                 Sesungguhnya yang demikian menjadi tanda-tanda kebesaran-Nya
                 bagi orang-orang yang berfikir.
               </p>
-              <p className="mt-4">( QS. Ar-Ruum : 12 )</p>
+              <p className="font-condensed text-lg mt-4">
+                ( QS. Ar-Ruum : 12 )
+              </p>
             </div>
           </div>{' '}
           <div className="section6 mx-auto flex flex-col items-center justify-center">
             <div className="text-center font-formal px-5 bg-[#676f74] py-10 text-[#E2C6C6] mx-10">
-              <p>
+              <p className="font-condensed text-lg leading-5">
                 Jangan ragu untuk datang, kami sudah berkoordinasi dengan semua
                 pihak terkait pencegahan penularan COVID-19. Acara kami akan
                 mengikuti segala prosedur protokol kesehatan untuk mencegah
                 penularan.
               </p>
-              <u className="">
+              <u className="font-condensed text-lg">
                 So, don&apos;t be panic, we look forward to seeing you there!
               </u>
               <br />
@@ -668,27 +683,25 @@ const Home: NextPage = () => {
               <Image src={covid} alt="covid" width="200" height="200" />
               <br />
               <br />
-              <p>
+              <p className="font-condensed text-lg leading-5">
                 Bagi para tamu undanga diharapkan mengikuti protokol kesehatan
                 untuk mencegah COVID-19
               </p>
             </div>
           </div>
           <div className="section6 mx-auto flex flex-col items-center justify-center">
-            <div className="text-center font-formal px-5 bg-[#676f74] py-10 text-[#E2C6C6] mx-10">
+            <div className="text-center font-formal px-5 bg-[#676f74] py-10 text-[#E2C6C6] mx-10 font-condensed text-lg leading-5">
               <p>
                 Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga
                 apabila Bapak/Ibu/Saudara/i berkenan hadir memberikan do&apos;a
-                restu kepada kedua mempelai.
+                restu kepada <br /> kedua mempelai.
               </p>
               <p>
                 Atas kehadiran serta do&apos;a restunya kami mengucapkan terima
                 kasih.
               </p>
-              <p className="font-gaya text-xl mt-4">Wassalamu&apos;alaikum</p>
-              <p className="font-gaya text-xl mb-10">
-                Warahmatullahi Wabarakatuh
-              </p>
+              <p className="mt-4">Wassalamu&apos;alaikum</p>
+              <p className="mb-10">Warahmatullahi Wabarakatuh</p>
 
               <p>Kel. H. Asep Drajat</p>
               <p className=" mb-5">Hj. Noneng Supartika</p>

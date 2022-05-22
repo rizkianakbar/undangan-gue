@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Parisienne&display=swap');
 
 html,
@@ -30,6 +31,10 @@ a {
 
 .font-formal {
   font-family: 'Alegreya', serif;
+}
+
+.font-condensed {
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 .section1 {
@@ -206,4 +211,5 @@ a {
 
 .input::placeholder {
   color: #e2c6c6;
+  font-size: 15px;
 }

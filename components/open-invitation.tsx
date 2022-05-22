@@ -42,23 +42,23 @@ const OpenInvitation = () => {
 
   return (
     <div className="z-50 section0 mx-auto flex flex-col items-center justify-center">
-      <Image src={cover} alt="cover-image" width="243px" height="280px" />
+      <Image src={cover} alt="cover-image" width="250px" height="300px" />
       <motion.div
         variants={containerVariants}
         initial="hidden"
         animate="visible"
         className="text-center text-gray-500 text-xl w-[300px] font-formal"
       >
-        <p className="mb-4 text-lg">The Wedding Of</p>
+        <p className="mb-4 text-2xl font-condensed">The Wedding Of</p>
         <p className="font-gaya text-5xl mb-6">
           Vinni <span className="text-pink-100">&</span> Rifqi
         </p>
-        <p className="text-sm">Kepada Yth</p>
-        <p className="mb-1 text-sm">Bapak/Ibu/Saudara/i</p>
+        <p className="text-lg font-condensed">Kepada Yth</p>
+        <p className="mb-1 text-lg font-condensed">Bapak/Ibu/Saudara/i</p>
         <div className="w-full h-10 p-4 bg-white rounded-lg">
           <p className="mt-[-10px] font-bold">{name}</p>
         </div>
-        <p className="text-sm mt-2">
+        <p className="text-sm mt-2 font-condensed">
           Mohon maaf apabila ada kesalahan penulisan nama/gelar
         </p>
         <button
