@@ -689,7 +689,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="section5 mx-auto ">
-            <div className="text-center text-gray-500 font-formal px-5 mx-4 mb-10">
+            <div className="text-center text-gray-500 font-formal px-5 mx-4 pb-16">
               <p
                 className="mb-7 text-4xl font-gaya text-[#E2C6C6] "
                 data-aos="fade-down"
