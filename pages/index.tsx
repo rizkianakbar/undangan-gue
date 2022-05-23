@@ -45,6 +45,8 @@ const Home: NextPage = () => {
   const [comment, setComment] = React.useState('');
 
   const fieldRef = React.useRef<HTMLInputElement>(null);
+  const hahaRef = React.useRef<HTMLInputElement>(null);
+
   const lazyRoot = React.useRef(null);
 
   const { audio, loading, setLoading, data, reload, setReload } =
@@ -80,6 +82,8 @@ const Home: NextPage = () => {
   };
 
   const sendComment = async () => {
+    if (hahaRef.current) hahaRef.current.scrollIntoView({ behavior: 'smooth' });
+
     if (name !== '' && comment !== '') {
       setLoading(true);
 
@@ -686,6 +690,7 @@ const Home: NextPage = () => {
               <div
                 className="mx-auto bg-[#E2C6C6] p-6 font-condensed text-lg"
                 data-aos="zoom-in"
+                ref={hahaRef}
               >
                 <p className="text-left font-bold">{data.length} Ucapan</p>
                 <input
