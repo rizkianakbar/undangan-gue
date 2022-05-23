@@ -64,7 +64,7 @@ const OpenInvitation = () => {
           Mohon maaf apabila ada kesalahan penulisan nama/gelar
         </p>
         <button
-          className="animate-bounce bg-gray-500 text-white uppercase px-4 py-2 mt-6 text-sm border-2 border-white"
+          className="animate-bounce bg-gray-500 text-white uppercase px-4 py-2 mt-6 text-sm border-2 border-white font-condensed"
           onClick={() => {
             setOpen(true);
             audio.play();

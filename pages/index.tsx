@@ -17,7 +17,9 @@ import {
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Navigation, Thumbs } from 'swiper';
 import Countdown from 'react-countdown';
+import Aos from 'aos';
 
+import 'aos/dist/aos.css';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
@@ -103,6 +105,10 @@ const Home: NextPage = () => {
     }
   };
 
+  React.useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <>
       <PageSection>
@@ -156,26 +162,20 @@ const Home: NextPage = () => {
             ref={fieldRef}
           >
             <div className="text-center text-[#E2C6C6] font-formal pt-16 mx-4">
-              <motion.em
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
+              <em
+                data-aos="fade-down"
                 className=" text-lg block font-condensed leading-5"
               >
                 Bismillahirrahmanirrahim
-              </motion.em>
-              <motion.em
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
+              </em>
+              <em
+                data-aos="fade-down"
                 className=" text-lg block font-condensed my-4 leading-5"
               >
                 Assalamu&apos;alaikum Wr. Wb.
-              </motion.em>
-              <motion.p
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
+              </em>
+              <p
+                data-aos="fade-down"
                 className="mb-4 text-lg block font-condensed leading-6"
               >
                 Dengan memohon Rahmat dan Ridho Allah SWT,
@@ -183,312 +183,291 @@ const Home: NextPage = () => {
                 kami bermaksud menyelenggarakan resepsi
                 <br />
                 pernikahan putra-putri kami.
-              </motion.p>
-              <Image
-                src={womenCover}
-                alt="cover-image"
-                width="200px"
-                height="230px"
-              />
-              <p className="font-gaya text-3xl mb-4 ">
+              </p>
+              <div data-aos="fade-in">
+                <Image
+                  src={womenCover}
+                  alt="cover-image"
+                  width="200px"
+                  height="230px"
+                />
+              </div>
+              <p className="font-gaya text-3xl mb-4" data-aos="fade-left">
                 apt. Vinni Haiva Azhari, S.Fam
               </p>
-              <motion.p
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
+              <p
                 className="mb-7 text-lg font-condensed leading-6"
+                data-aos="fade-left"
               >
-                Putri pertama dari <br /> Bapak H. Asep Drajat & <br /> Ibu Hj.
+                Putri keempat dari <br /> Bapak H. Asep Drajat & <br /> Ibu Hj.
                 Noneng Supartika
-              </motion.p>
+              </p>
               <p className="font-gaya text-6xl my-6">&</p>
-              <Image
-                src={manCover}
-                alt="cover-image"
-                width="200px"
-                height="230px"
-              />
-              <p className="font-gaya text-3xl mb-4">
+              <div data-aos="fade-in">
+                <Image
+                  src={manCover}
+                  alt="cover-image"
+                  width="200px"
+                  height="230px"
+                />
+              </div>
+              <p className="font-gaya text-3xl mb-4" data-aos="fade-right">
                 Rifqi Fariz Radifan, S.T
               </p>
-              <motion.p
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
+              <p
                 className="mb-10 text-lg font-condensed leading-6"
+                data-aos="fade-right"
               >
-                Putri pertama dari <br /> Bapak Agus Dadang Hidayat, S.Pd.I &
+                Putra pertama dari <br /> Bapak Agus Dadang Hidayat, S.Pd.I &
                 <br /> Ibu Susmiati Ramini
-              </motion.p>
+              </p>
             </div>
           </div>
           <div className="section6 mx-auto flex flex-col items-center justify-center">
             <div className="text-center text-gray-500 font-formal py-5 ">
-              <Countdown date={date} renderer={renderer} />
-              <motion.p
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-4 text-5xl font-gaya"
-              >
+              <div data-aos="fade-down">
+                <Countdown date={date} renderer={renderer} />
+              </div>
+              <p data-aos="fade-left" className="mb-4 text-5xl font-gaya">
                 Akad nikah
-              </motion.p>
-              <motion.p
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="text-2xl font-condensed"
-              >
+              </p>
+              <p data-aos="fade-left" className="text-2xl font-condensed">
                 Minggu, 29 Mei 2022
-              </motion.p>
-              <motion.p
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="text-lg font-condensed"
-              >
+              </p>
+              <p data-aos="fade-left" className="text-lg font-condensed">
                 Pukul 08.00 WIB
-              </motion.p>
-              <Image
-                src={ring}
-                alt="cover-image"
-                width="350px"
-                height="200px"
-              ></Image>
-              <motion.p
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="mb-4 text-5xl font-gaya"
-              >
+              </p>
+              <div data-aos="fade-in">
+                <Image
+                  src={ring}
+                  alt="cover-image"
+                  width="350px"
+                  height="200px"
+                />
+              </div>
+              <p data-aos="fade-right" className="mb-4 text-5xl font-gaya">
                 Resepsi
-              </motion.p>
-              <motion.p
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="text-2xl font-condensed"
-              >
+              </p>
+              <p data-aos="fade-right" className="text-2xl font-condensed">
                 Minggu, 29 Mei 2022
-              </motion.p>
-              <motion.p
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="text-lg font-condensed"
-              >
+              </p>
+              <p data-aos="fade-in" className="text-lg font-condensed">
                 Pukul 11.00 s.d. 14.00 WIB
-              </motion.p>
+              </p>
             </div>
           </div>
           <div className="section6 mx-auto flex flex-col items-center justify-center">
             <div className="text-center text-gray-500 font-formal p-5">
-              <motion.p
-                initial={{ x: 100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="my-10 text-5xl font-gaya"
-              >
+              <p data-aos="fade-down" className="my-10 text-5xl font-gaya">
                 Lokasi <br /> Pernikahan
-              </motion.p>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15839.506586275318!2d107.5347955!3d-7.0237829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xec5c26dd6abbbfb4!2sSutan%20Raja%20Hotel%20and%20Convention%20Centre!5e0!3m2!1sen!2sid!4v1653124996353!5m2!1sen!2sid"
-                width="300px"
-                height="400px"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                frameBorder="0"
-                className="rounded-lg shadow-lg mb-10 mx-auto border-2 border-pink-200"
-              ></iframe>
-              <Image src={maps} alt="cover-image" width="50px" height="50px" />
-              <motion.p
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
+              </p>
+              <div data-aos="fade-in">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15839.506586275318!2d107.5347955!3d-7.0237829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xec5c26dd6abbbfb4!2sSutan%20Raja%20Hotel%20and%20Convention%20Centre!5e0!3m2!1sen!2sid!4v1653124996353!5m2!1sen!2sid"
+                  width="300px"
+                  height="400px"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  frameBorder="0"
+                  className="rounded-lg shadow-lg mb-10 mx-auto border-2 border-pink-200"
+                ></iframe>
+                <Image
+                  src={maps}
+                  alt="cover-image"
+                  width="50px"
+                  height="50px"
+                />
+              </div>
+              <p
+                data-aos="fade-down"
                 className="text-lg px-6 font-condensed leading-5"
               >
                 Sutan Raja Hotel Convention Centere Jl. Raya Soreang Km 17
                 Soreang Kab. Bandung
-              </motion.p>
-              <motion.button
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                className="bg-gray-500 text-white uppercase px-4 py-2 mt-6 text-sm border-2 border-white"
+              </p>
+              <button
+                className="bg-gray-500 text-white uppercase px-4 py-2 mt-6 text-sm border-2 border-white font-condensed"
                 onClick={openGoogleMaps}
+                data-aos="fade-down"
               >
                 Lihat Lokasi
-              </motion.button>
+              </button>
             </div>
           </div>
           <div className="section7 mx-auto">
             <div className="text-center text-[#E2C6C6] font-formal py-5 mx-4">
-              <p className="m-10 text-5xl font-gaya">Our Gallery</p>
-              <Swiper
-                loop={false}
-                spaceBetween={10}
-                navigation={true}
-                thumbs={{ swiper: null }}
-                modules={[FreeMode, Navigation, Thumbs]}
-                className="mySwiper2"
-              >
-                <SwiperSlide>
-                  <Image
-                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201623/1_adrat6.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
-                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
-                    placeholder="blur"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201629/2_uv6npa.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
-                    blurDataURL="LHEpD@0000~q^-00%N?bWXV@%MIU"
-                    placeholder="blur"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201625/3_czmtqk.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
-                    blurDataURL="|JHM1Mx]X8t7ITozaeaeR%_4%NM_WBozRjWBj[ofx[niRjofjZaytRazax?HxuRjfkaekCkCofWBR4xvV@ayf+j[V@RjkC%2V@o#ogRjRjozj[ae%gaeWBoft7t8ofj[j[%Nt7t8aeofj[ofkCozjYoftRaeogayayV@WB"
-                    placeholder="blur"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201628/4_z2ivt2.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
-                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
-                    placeholder="blur"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201630/5_dzhmka.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
-                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
-                    placeholder="blur"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201628/6_hvngjq.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
-                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
-                    placeholder="blur"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201629/7_oiixk4.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
-                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
-                    placeholder="blur"
-                  />
-                </SwiperSlide>
-              </Swiper>
-              <Swiper
-                loop={false}
-                spaceBetween={10}
-                slidesPerView={4}
-                freeMode={true}
-                watchSlidesProgress={true}
-                modules={[FreeMode, Navigation, Thumbs]}
-                className="mySwiper"
-              >
-                <SwiperSlide>
-                  <Image
-                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201623/1_adrat6.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
-                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
-                    placeholder="blur"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201629/2_uv6npa.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
-                    blurDataURL="LHEpD@0000~q^-00%N?bWXV@%MIU"
-                    placeholder="blur"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201625/3_czmtqk.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
-                    blurDataURL="|JHM1Mx]X8t7ITozaeaeR%_4%NM_WBozRjWBj[ofx[niRjofjZaytRazax?HxuRjfkaekCkCofWBR4xvV@ayf+j[V@RjkC%2V@o#ogRjRjozj[ae%gaeWBoft7t8ofj[j[%Nt7t8aeofj[ofkCozjYoftRaeogayayV@WB"
-                    placeholder="blur"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201628/4_z2ivt2.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
-                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
-                    placeholder="blur"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201630/5_dzhmka.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
-                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
-                    placeholder="blur"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201628/6_hvngjq.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
-                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
-                    placeholder="blur"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201629/7_oiixk4.jpg"
-                    alt="cover-image"
-                    width="500"
-                    height="500"
-                    blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
-                    placeholder="blur"
-                  />
-                </SwiperSlide>
-              </Swiper>
+              <p data-aos="fade-down" className="m-10 text-5xl font-gaya">
+                Our Gallery
+              </p>
+              <div data-aos="fade-in">
+                <Swiper
+                  loop={false}
+                  spaceBetween={10}
+                  navigation={true}
+                  thumbs={{ swiper: null }}
+                  modules={[FreeMode, Navigation, Thumbs]}
+                  className="mySwiper2"
+                >
+                  <SwiperSlide>
+                    <Image
+                      src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201623/1_adrat6.jpg"
+                      alt="cover-image"
+                      width="500"
+                      height="500"
+                      blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                      placeholder="blur"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201629/2_uv6npa.jpg"
+                      alt="cover-image"
+                      width="500"
+                      height="500"
+                      blurDataURL="LHEpD@0000~q^-00%N?bWXV@%MIU"
+                      placeholder="blur"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201625/3_czmtqk.jpg"
+                      alt="cover-image"
+                      width="500"
+                      height="500"
+                      blurDataURL="|JHM1Mx]X8t7ITozaeaeR%_4%NM_WBozRjWBj[ofx[niRjofjZaytRazax?HxuRjfkaekCkCofWBR4xvV@ayf+j[V@RjkC%2V@o#ogRjRjozj[ae%gaeWBoft7t8ofj[j[%Nt7t8aeofj[ofkCozjYoftRaeogayayV@WB"
+                      placeholder="blur"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201628/4_z2ivt2.jpg"
+                      alt="cover-image"
+                      width="500"
+                      height="500"
+                      blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                      placeholder="blur"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201630/5_dzhmka.jpg"
+                      alt="cover-image"
+                      width="500"
+                      height="500"
+                      blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                      placeholder="blur"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201628/6_hvngjq.jpg"
+                      alt="cover-image"
+                      width="500"
+                      height="500"
+                      blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                      placeholder="blur"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201629/7_oiixk4.jpg"
+                      alt="cover-image"
+                      width="500"
+                      height="500"
+                      blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                      placeholder="blur"
+                    />
+                  </SwiperSlide>
+                </Swiper>
+                <Swiper
+                  loop={false}
+                  spaceBetween={10}
+                  slidesPerView={4}
+                  freeMode={true}
+                  watchSlidesProgress={true}
+                  modules={[FreeMode, Navigation, Thumbs]}
+                  className="mySwiper"
+                >
+                  <SwiperSlide>
+                    <Image
+                      src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201623/1_adrat6.jpg"
+                      alt="cover-image"
+                      width="500"
+                      height="500"
+                      blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                      placeholder="blur"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201629/2_uv6npa.jpg"
+                      alt="cover-image"
+                      width="500"
+                      height="500"
+                      blurDataURL="LHEpD@0000~q^-00%N?bWXV@%MIU"
+                      placeholder="blur"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201625/3_czmtqk.jpg"
+                      alt="cover-image"
+                      width="500"
+                      height="500"
+                      blurDataURL="|JHM1Mx]X8t7ITozaeaeR%_4%NM_WBozRjWBj[ofx[niRjofjZaytRazax?HxuRjfkaekCkCofWBR4xvV@ayf+j[V@RjkC%2V@o#ogRjRjozj[ae%gaeWBoft7t8ofj[j[%Nt7t8aeofj[ofkCozjYoftRaeogayayV@WB"
+                      placeholder="blur"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201628/4_z2ivt2.jpg"
+                      alt="cover-image"
+                      width="500"
+                      height="500"
+                      blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                      placeholder="blur"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201630/5_dzhmka.jpg"
+                      alt="cover-image"
+                      width="500"
+                      height="500"
+                      blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                      placeholder="blur"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201628/6_hvngjq.jpg"
+                      alt="cover-image"
+                      width="500"
+                      height="500"
+                      blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                      placeholder="blur"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201629/7_oiixk4.jpg"
+                      alt="cover-image"
+                      width="500"
+                      height="500"
+                      blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                      placeholder="blur"
+                    />
+                  </SwiperSlide>
+                </Swiper>
+              </div>
             </div>
           </div>
           <div className="section3 mx-auto">
             <div className="text-center text-gray-500 font-formal p-5 mx-4">
-              <p className="m-10 text-4xl font-gaya text-pink-200 text-shadow">
+              <p
+                data-aos="fade-down"
+                className="m-10 text-4xl font-gaya text-pink-200 text-shadow"
+              >
                 Cerita Cinta Kita
               </p>
               <ol className="relative border-l-2 border-pink-200">
@@ -500,7 +479,10 @@ const Home: NextPage = () => {
                       alt="Jese Leos image"
                     />
                   </span>
-                  <div className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600">
+                  <div
+                    data-aos="fade-left"
+                    className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600"
+                  >
                     <div className="justify-between items-center mb-3 sm:flex">
                       <time className="mb-1 text-3xl font-bold font-condensed text-white sm:order-last sm:mb-0">
                         Oktober 2015
@@ -520,7 +502,10 @@ const Home: NextPage = () => {
                       alt="Jese Leos image"
                     />
                   </span>
-                  <div className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600 ">
+                  <div
+                    data-aos="fade-right"
+                    className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600 "
+                  >
                     <div className="justify-between items-center mb-3 sm:flex">
                       <time className="mb-1 text-3xl font-bold font-condensed text-white sm:order-last sm:mb-0">
                         21 December 2015
@@ -540,7 +525,10 @@ const Home: NextPage = () => {
                       alt="Jese Leos image"
                     />
                   </span>
-                  <div className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600">
+                  <div
+                    data-aos="fade-left"
+                    className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600"
+                  >
                     <div className="justify-between items-center mb-3 sm:flex">
                       <time className="mb-1 text-3xl font-bold font-condensed text-white sm:order-last sm:mb-0">
                         30 Januari 2021
@@ -561,7 +549,10 @@ const Home: NextPage = () => {
                       alt="Jese Leos image"
                     />
                   </span>
-                  <div className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600">
+                  <div
+                    data-aos="fade-right"
+                    className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600"
+                  >
                     <div className="justify-between items-center mb-3 sm:flex">
                       <time className="mb-1 text-3xl font-bold font-condensed text-white sm:order-last sm:mb-0">
                         29 Mei 2022
@@ -578,10 +569,16 @@ const Home: NextPage = () => {
           </div>
           <div className="section4 mx-auto flex flex-col items-center justify-center">
             <div className="text-center text-gray-500 font-formal px-5 mx-4">
-              <p className="mb-7 text-4xl font-gaya text-[#E2C6C6] ">
+              <p
+                className="mb-7 text-4xl font-gaya text-[#E2C6C6]"
+                data-aos="fade-down"
+              >
                 Konfirmasi Kehadiran melalui whatsapp mempelai
               </p>
-              <div className="mx-auto bg-[#E2C6C6] p-6 font-condensed text-lg">
+              <div
+                className="mx-auto bg-[#E2C6C6] p-6 font-condensed text-lg"
+                data-aos="zoom-in"
+              >
                 <input
                   type="text"
                   className="w-full p-3 my-2 bg-[#676f74] text-[#E2C6C6] input"
@@ -639,7 +636,7 @@ const Home: NextPage = () => {
                   initial={{ y: 100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                  className="bg-gray-500 text-white px-4 py-2 mt-6 text-sm border-2 border-white"
+                  className="bg-gray-500 text-white uppercase px-4 py-2 mt-6 text-sm border-2 border-white"
                   onClick={sendMessage}
                 >
                   Kirim ke WA mempelai
@@ -649,10 +646,16 @@ const Home: NextPage = () => {
           </div>
           <div className="section5 mx-auto ">
             <div className="text-center text-gray-500 font-formal px-5 mx-4 mb-10">
-              <p className="mb-7 text-4xl font-gaya text-[#E2C6C6] ">
+              <p
+                className="mb-7 text-4xl font-gaya text-[#E2C6C6] "
+                data-aos="fade-down"
+              >
                 Ucapan & Do&apos;a
               </p>
-              <div className="mx-auto bg-[#E2C6C6] p-6 font-condensed text-lg">
+              <div
+                className="mx-auto bg-[#E2C6C6] p-6 font-condensed text-lg"
+                data-aos="zoom-in"
+              >
                 <input
                   type="text"
                   className="w-full p-3 my-2 bg-[#676f74] text-[#E2C6C6] input"
@@ -673,7 +676,7 @@ const Home: NextPage = () => {
                   initial={{ y: 100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 1, duration: 0.8, type: 'tween' }}
-                  className="bg-gray-500 text-white px-4 py-2 mt-6 text-sm border-2 border-white"
+                  className="bg-gray-500 uppercase text-white px-4 py-2 mt-6 text-sm border-2 border-white"
                 >
                   Kirim
                 </motion.button>
@@ -691,7 +694,10 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="section6 mx-auto flex flex-col items-center justify-center">
-            <div className="text-center font-formal px-5 mx-4 bg-[#676f74] py-10 text-[#E2C6C6] mx-10">
+            <div
+              className="text-center font-formal px-5 mx-4 bg-[#676f74] py-10 text-[#E2C6C6] mx-10"
+              data-aos="zoom-in"
+            >
               <Image
                 src={bunga}
                 alt="bunga"
@@ -712,7 +718,10 @@ const Home: NextPage = () => {
             </div>
           </div>{' '}
           <div className="section6 mx-auto flex flex-col items-center justify-center">
-            <div className="text-center font-formal px-5 bg-[#676f74] py-10 text-[#E2C6C6] mx-10">
+            <div
+              className="text-center font-formal px-5 bg-[#676f74] py-10 text-[#E2C6C6] mx-10"
+              data-aos="zoom-in"
+            >
               <p className="font-condensed text-lg leading-5">
                 Jangan ragu untuk datang, kami sudah berkoordinasi dengan semua
                 pihak terkait pencegahan penularan COVID-19. Acara kami akan
@@ -734,7 +743,10 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="section6 mx-auto flex flex-col items-center justify-center">
-            <div className="text-center font-formal px-5 bg-[#676f74] py-10 text-[#E2C6C6] mx-10 font-condensed text-lg leading-5">
+            <div
+              className="text-center font-formal px-5 bg-[#676f74] py-10 text-[#E2C6C6] mx-10 font-condensed text-lg leading-5"
+              data-aos="zoom-in"
+            >
               <p>
                 Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga
                 apabila Bapak/Ibu/Saudara/i berkenan hadir memberikan do&apos;a
