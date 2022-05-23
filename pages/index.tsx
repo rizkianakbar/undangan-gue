@@ -192,7 +192,7 @@ const Home: NextPage = () => {
                   height="230px"
                 />
               </div>
-              <p className="font-gaya text-3xl mb-4" data-aos="fade-left">
+              <p className="font-dancing text-4xl mb-4" data-aos="fade-left">
                 apt. Vinni Haiva Azhari, S.Fam
               </p>
               <p
@@ -211,7 +211,7 @@ const Home: NextPage = () => {
                   height="230px"
                 />
               </div>
-              <p className="font-gaya text-3xl mb-4" data-aos="fade-right">
+              <p className="font-dancing text-4xl mb-4" data-aos="fade-right">
                 Rifqi Fariz Radifan, S.T
               </p>
               <p

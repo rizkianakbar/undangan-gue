@@ -37,6 +37,10 @@ a {
   font-family: 'Barlow Condensed', sans-serif;
 }
 
+.font-dancing {
+  font-family: 'Dancing Script', cursive;
+}
+
 .section1 {
   background-image: url('https://res.cloudinary.com/rizkianakbar/image/upload/v1653203393/NSYT1885_1_esftsl.jpg');
   background-size: cover;
