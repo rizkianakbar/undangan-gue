@@ -19,18 +19,32 @@ import { FreeMode, Navigation, Thumbs } from 'swiper';
 import Countdown from 'react-countdown';
 import Aos from 'aos';
 
+import TimeAgo from 'javascript-time-ago';
+
+import en from 'javascript-time-ago/locale/en.json';
+import ru from 'javascript-time-ago/locale/ru.json';
+
+TimeAgo.addDefaultLocale(en);
+TimeAgo.addLocale(ru);
+
 import 'aos/dist/aos.css';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import { AppContext } from './_app';
+import { fetcher } from '@/utils/fetcher';
+import ReactTimeAgo from 'react-time-ago';
 
 const Home: NextPage = () => {
   const [isHadir, setIsHadir] = React.useState(true);
   const [name, setName] = React.useState('');
   const [jumlah, setJumlah] = React.useState('');
   const [isPlay, setIsPlay] = React.useState(true);
+  const [comment, setComment] = React.useState('');
+  const [loading, setLoading] = React.useState(false);
+  const [data, setData] = React.useState([]);
+  const [reload, setReload] = React.useState(0);
 
   const fieldRef = React.useRef<HTMLInputElement>(null);
   const lazyRoot = React.useRef(null);
@@ -62,7 +76,37 @@ const Home: NextPage = () => {
     } else {
       window.location.href = `https://wa.me/${num}?text=Saya%20${name}%20Tidak%20Akan%20Menghadiri%20Acara`;
     }
+
+    setName('');
   };
+
+  const sendComment = async () => {
+    if (name !== '' && comment !== '') {
+      setLoading(true);
+
+      const data = { name, comment };
+      const sendComment = await fetcher('/api/set-comment', { user: data });
+
+      if (sendComment !== undefined) {
+        setComment('');
+        setName('');
+
+        setReload(reload + 1);
+      }
+    }
+  };
+
+  React.useEffect(() => {
+    const getComments = async () => {
+      await fetcher('/api/get-comment').then((data: any) => {
+        setData(data);
+        setLoading(false);
+      });
+    };
+    getComments();
+  }, [reload]);
+
+  console.log(data.length);
 
   const date = new Date();
   date.setDate(29);
@@ -656,6 +700,7 @@ const Home: NextPage = () => {
                 className="mx-auto bg-[#E2C6C6] p-6 font-condensed text-lg"
                 data-aos="zoom-in"
               >
+                <p className="text-left font-bold">{data.length} Ucapan</p>
                 <input
                   type="text"
                   className="w-full p-3 my-2 bg-[#676f74] text-[#E2C6C6] input"
@@ -663,23 +708,63 @@ const Home: NextPage = () => {
                   onChange={(e) => {
                     setName(e.target.value);
                   }}
+                  value={name}
                 />
                 <textarea
                   className="w-full p-3 my-2 h-[100px] bg-[#676f74] text-[#E2C6C6] input"
                   placeholder="Berikan Ucapan dan Do'a"
                   onChange={(e) => {
-                    setJumlah(e.target.value);
+                    setComment(e.target.value);
                   }}
+                  value={comment}
                 />
-
                 <motion.button
                   initial={{ y: 100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 1, duration: 0.8, type: 'tween' }}
                   className="bg-gray-500 uppercase text-white px-4 py-2 mt-6 text-sm border-2 border-white"
+                  onClick={sendComment}
                 >
-                  Kirim
+                  {loading === true ? (
+                    <svg
+                      className="animate-spin h-5 w-5 text-white text-center"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <circle
+                        className="opacity-25"
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
+                        strokeWidth="4"
+                      ></circle>
+                      <path
+                        className="opacity-75"
+                        fill="currentColor"
+                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                      ></path>
+                    </svg>
+                  ) : (
+                    <p>Kirim</p>
+                  )}
                 </motion.button>
+                <hr className="text-white border-white border-2 my-4" />
+                {/* comment section */}
+                {data.map((item: any) => {
+                  return (
+                    <div className="flex text-left my-2" key={item.id}>
+                      <div className="flex-1 border rounded-lg px-4 py-2 sm:px-6 sm:py-4 leading-relaxed">
+                        <strong>{item.name}</strong>{' '}
+                        <span className="text-xs text-gray-400">
+                          <ReactTimeAgo date={item.createdAt} locale="id" />
+                        </span>
+                        <p className="text-sm">{item.comment}</p>
+                      </div>
+                    </div>
+                  );
+                })}
                 <hr className="text-white border-white border-2 my-4" />
                 <p className="mx-4 leading-5">
                   Ucapan selamat dan kebahagiaan bisa dari mana saja, Tanpa
