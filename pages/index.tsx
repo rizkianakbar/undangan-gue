@@ -751,7 +751,7 @@ const Home: NextPage = () => {
                   )}
                 </motion.button>
                 <hr className="text-white border-white border-2 my-4" />
-                {/* comment section */}
+                {/* comment sect ion */}
                 {data.map((item: any) => {
                   return (
                     <div className="flex text-left my-2" key={item.id}>
