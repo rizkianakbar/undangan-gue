@@ -35,6 +35,7 @@ import 'swiper/css/thumbs';
 import { AppContext } from './_app';
 import { fetcher } from '@/utils/fetcher';
 import ReactTimeAgo from 'react-time-ago';
+import PaginatedItems from '@/components/pagination';
 
 const Home: NextPage = () => {
   const [isHadir, setIsHadir] = React.useState(true);
@@ -42,14 +43,12 @@ const Home: NextPage = () => {
   const [jumlah, setJumlah] = React.useState('');
   const [isPlay, setIsPlay] = React.useState(true);
   const [comment, setComment] = React.useState('');
-  const [loading, setLoading] = React.useState(false);
-  const [data, setData] = React.useState([]);
-  const [reload, setReload] = React.useState(0);
 
   const fieldRef = React.useRef<HTMLInputElement>(null);
   const lazyRoot = React.useRef(null);
 
-  const { audio } = React.useContext(AppContext);
+  const { audio, loading, setLoading, data, reload, setReload } =
+    React.useContext(AppContext);
 
   const mute = () => {
     audio.muted = !audio.muted;
@@ -95,18 +94,6 @@ const Home: NextPage = () => {
       }
     }
   };
-
-  React.useEffect(() => {
-    const getComments = async () => {
-      await fetcher('/api/get-comment').then((data: any) => {
-        setData(data);
-        setLoading(false);
-      });
-    };
-    getComments();
-  }, [reload]);
-
-  console.log(data.length);
 
   const date = new Date();
   date.setDate(29);
@@ -236,12 +223,12 @@ const Home: NextPage = () => {
                   height="230px"
                 />
               </div>
-              <p className="font-dancing text-4xl mb-4" data-aos="fade-left">
+              <p className="font-dancing text-4xl mb-4" data-aos="zoom-in">
                 apt. Vinni Haiva Azhari, S.Fam
               </p>
               <p
                 className="mb-7 text-lg font-condensed leading-6"
-                data-aos="fade-left"
+                data-aos="zoom-in"
               >
                 Putri keempat dari <br /> Bapak H. Asep Drajat & <br /> Ibu Hj.
                 Noneng Supartika
@@ -255,12 +242,12 @@ const Home: NextPage = () => {
                   height="230px"
                 />
               </div>
-              <p className="font-dancing text-4xl mb-4" data-aos="fade-right">
+              <p className="font-dancing text-4xl mb-4" data-aos="zoom-in">
                 Rifqi Fariz Radifan, S.T
               </p>
               <p
                 className="mb-10 text-lg font-condensed leading-6"
-                data-aos="fade-right"
+                data-aos="zoom-in"
               >
                 Putra pertama dari <br /> Bapak Agus Dadang Hidayat, S.Pd.I &
                 <br /> Ibu Susmiati Ramini
@@ -272,13 +259,13 @@ const Home: NextPage = () => {
               <div data-aos="fade-down">
                 <Countdown date={date} renderer={renderer} />
               </div>
-              <p data-aos="fade-left" className="mb-4 text-5xl font-gaya">
+              <p data-aos="zoom-in" className="mb-4 text-5xl font-gaya">
                 Akad nikah
               </p>
-              <p data-aos="fade-left" className="text-2xl font-condensed">
+              <p data-aos="zoom-in" className="text-2xl font-condensed">
                 Minggu, 29 Mei 2022
               </p>
-              <p data-aos="fade-left" className="text-lg font-condensed">
+              <p data-aos="zoom-in" className="text-lg font-condensed">
                 Pukul 08.00 WIB
               </p>
               <div data-aos="fade-in">
@@ -289,10 +276,10 @@ const Home: NextPage = () => {
                   height="200px"
                 />
               </div>
-              <p data-aos="fade-right" className="mb-4 text-5xl font-gaya">
+              <p data-aos="zoom-in" className="mb-4 text-5xl font-gaya">
                 Resepsi
               </p>
-              <p data-aos="fade-right" className="text-2xl font-condensed">
+              <p data-aos="zoom-in" className="text-2xl font-condensed">
                 Minggu, 29 Mei 2022
               </p>
               <p data-aos="fade-in" className="text-lg font-condensed">
@@ -524,7 +511,7 @@ const Home: NextPage = () => {
                     />
                   </span>
                   <div
-                    data-aos="fade-left"
+                    data-aos="zoom-in"
                     className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600"
                   >
                     <div className="justify-between items-center mb-3 sm:flex">
@@ -547,7 +534,7 @@ const Home: NextPage = () => {
                     />
                   </span>
                   <div
-                    data-aos="fade-right"
+                    data-aos="zoom-in"
                     className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600 "
                   >
                     <div className="justify-between items-center mb-3 sm:flex">
@@ -570,7 +557,7 @@ const Home: NextPage = () => {
                     />
                   </span>
                   <div
-                    data-aos="fade-left"
+                    data-aos="zoom-in"
                     className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600"
                   >
                     <div className="justify-between items-center mb-3 sm:flex">
@@ -594,7 +581,7 @@ const Home: NextPage = () => {
                     />
                   </span>
                   <div
-                    data-aos="fade-right"
+                    data-aos="zoom-in"
                     className="bg-transparent p-4 bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-700 dark:border-gray-600"
                   >
                     <div className="justify-between items-center mb-3 sm:flex">
@@ -752,19 +739,7 @@ const Home: NextPage = () => {
                 </motion.button>
                 <hr className="text-white border-white border-2 my-4" />
                 {/* comment sect ion */}
-                {data.map((item: any) => {
-                  return (
-                    <div className="flex text-left my-2" key={item.id}>
-                      <div className="flex-1 border rounded-lg px-4 py-2 sm:px-6 sm:py-4 leading-relaxed">
-                        <strong>{item.name}</strong>{' '}
-                        <span className="text-xs text-gray-400">
-                          <ReactTimeAgo date={item.createdAt} locale="id" />
-                        </span>
-                        <p className="text-sm">{item.comment}</p>
-                      </div>
-                    </div>
-                  );
-                })}
+                <PaginatedItems itemsPerPage={5} />
                 <hr className="text-white border-white border-2 my-4" />
                 <p className="mx-4 leading-5">
                   Ucapan selamat dan kebahagiaan bisa dari mana saja, Tanpa

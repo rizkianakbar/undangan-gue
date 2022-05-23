@@ -217,3 +217,8 @@ a {
   color: #e2c6c6;
   font-size: 15px;
 }
+
+li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
