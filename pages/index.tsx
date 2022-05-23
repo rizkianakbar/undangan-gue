@@ -82,8 +82,6 @@ const Home: NextPage = () => {
   };
 
   const sendComment = async () => {
-    if (hahaRef.current) hahaRef.current.scrollIntoView({ behavior: 'smooth' });
-
     if (name !== '' && comment !== '') {
       setLoading(true);
 
@@ -97,6 +95,7 @@ const Home: NextPage = () => {
         setReload(reload + 1);
       }
     }
+    if (hahaRef.current) hahaRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
   const date = new Date();
