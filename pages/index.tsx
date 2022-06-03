@@ -169,25 +169,27 @@ const Home: NextPage = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.5, duration: 0.8, type: 'tween' }}
-                className="text-xl  text-shadow-soft mb-10 font-condensed mb-[100%]"
+                className="text-xl  text-shadow-soft mb-10 font-condensed"
               >
                 Minggu, 29 Mei 2022
               </motion.p>
-              <div
-                onClick={scrollDown}
-                className="animate-bounce bg-white p-2 m-auto w-14 h-14 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center cursor-pointer"
-              >
-                <svg
-                  className="w-6 h-6 text-pink-300"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+              <div className="absolute bottom-10 inset-x-0 w-3/4 md:w-2/5 mx-auto -mt-1">
+                <div
+                  onClick={scrollDown}
+                  className="animate-bounce bg-white p-2 m-auto w-14 h-14 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center cursor-pointer "
                 >
-                  <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                </svg>
+                  <svg
+                    className="w-6 h-6 text-pink-300"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
