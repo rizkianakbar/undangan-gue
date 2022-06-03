@@ -7,8 +7,6 @@ import {
   UserCircleIcon,
 } from '@heroicons/react/solid';
 
-import { home } from '../assets/img';
-
 export interface NavigationItem {
   name?: string;
   icon: React.ComponentType<React.ComponentProps<'svg'>>;
