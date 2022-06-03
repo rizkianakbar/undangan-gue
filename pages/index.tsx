@@ -331,7 +331,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="section7 mx-auto">
-            <div className="text-center text-[#E2C6C6] font-formal py-5 mx-4">
+            <div className="text-center text-[#E2C6C6] font-formal py-20 mx-4">
               <p data-aos="fade-down" className="m-10 text-5xl font-gaya">
                 Our Gallery
               </p>
