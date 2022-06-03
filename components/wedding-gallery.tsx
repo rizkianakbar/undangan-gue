@@ -1,0 +1,179 @@
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { FreeMode, Navigation, Thumbs } from 'swiper';
+import Image from 'next/image';
+
+const WeddingGallery = () => {
+  return (
+    <div className="section7 mx-auto">
+      <div className="text-center text-[#E2C6C6] font-formal py-20 mx-4">
+        <p data-aos="fade-down" className="m-10 text-5xl font-gaya">
+          Our Gallery
+        </p>
+        <div data-aos="fade-in">
+          <Swiper
+            loop={false}
+            spaceBetween={10}
+            navigation={true}
+            thumbs={{ swiper: null }}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className="mySwiper2"
+          >
+            <SwiperSlide>
+              <Image
+                src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201623/1_adrat6.jpg"
+                alt="cover-image"
+                width="500"
+                height="500"
+                blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                placeholder="blur"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201629/2_uv6npa.jpg"
+                alt="cover-image"
+                width="500"
+                height="500"
+                blurDataURL="LHEpD@0000~q^-00%N?bWXV@%MIU"
+                placeholder="blur"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201625/3_czmtqk.jpg"
+                alt="cover-image"
+                width="500"
+                height="500"
+                blurDataURL="|JHM1Mx]X8t7ITozaeaeR%_4%NM_WBozRjWBj[ofx[niRjofjZaytRazax?HxuRjfkaekCkCofWBR4xvV@ayf+j[V@RjkC%2V@o#ogRjRjozj[ae%gaeWBoft7t8ofj[j[%Nt7t8aeofj[ofkCozjYoftRaeogayayV@WB"
+                placeholder="blur"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201628/4_z2ivt2.jpg"
+                alt="cover-image"
+                width="500"
+                height="500"
+                blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                placeholder="blur"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201630/5_dzhmka.jpg"
+                alt="cover-image"
+                width="500"
+                height="500"
+                blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                placeholder="blur"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201628/6_hvngjq.jpg"
+                alt="cover-image"
+                width="500"
+                height="500"
+                blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                placeholder="blur"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201629/7_oiixk4.jpg"
+                alt="cover-image"
+                width="500"
+                height="500"
+                blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                placeholder="blur"
+              />
+            </SwiperSlide>
+          </Swiper>
+          <Swiper
+            loop={false}
+            spaceBetween={10}
+            slidesPerView={4}
+            freeMode={true}
+            watchSlidesProgress={true}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <Image
+                src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201623/1_adrat6.jpg"
+                alt="cover-image"
+                width="500"
+                height="500"
+                blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                placeholder="blur"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201629/2_uv6npa.jpg"
+                alt="cover-image"
+                width="500"
+                height="500"
+                blurDataURL="LHEpD@0000~q^-00%N?bWXV@%MIU"
+                placeholder="blur"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201625/3_czmtqk.jpg"
+                alt="cover-image"
+                width="500"
+                height="500"
+                blurDataURL="|JHM1Mx]X8t7ITozaeaeR%_4%NM_WBozRjWBj[ofx[niRjofjZaytRazax?HxuRjfkaekCkCofWBR4xvV@ayf+j[V@RjkC%2V@o#ogRjRjozj[ae%gaeWBoft7t8ofj[j[%Nt7t8aeofj[ofkCozjYoftRaeogayayV@WB"
+                placeholder="blur"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201628/4_z2ivt2.jpg"
+                alt="cover-image"
+                width="500"
+                height="500"
+                blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                placeholder="blur"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201630/5_dzhmka.jpg"
+                alt="cover-image"
+                width="500"
+                height="500"
+                blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                placeholder="blur"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201628/6_hvngjq.jpg"
+                alt="cover-image"
+                width="500"
+                height="500"
+                blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                placeholder="blur"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="https://res.cloudinary.com/rizkianakbar/image/upload/v1653201629/7_oiixk4.jpg"
+                alt="cover-image"
+                width="500"
+                height="500"
+                blurDataURL="L5FZ7@xb00xw00_4V{bJ0000$,D$"
+                placeholder="blur"
+              />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default WeddingGallery;
