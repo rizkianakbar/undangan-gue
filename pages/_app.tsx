@@ -14,6 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const [loading, setLoading] = React.useState(false);
   const [data, setData] = React.useState([]);
   const [reload, setReload] = React.useState(0);
+  const [numberOfPages] = React.useState<number>(5);
   const [audio] = React.useState(
     typeof Audio !== 'undefined' &&
       new Audio(
@@ -31,6 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     reload,
     setReload,
     setData,
+    numberOfPages,
   };
   return (
     <AppContext.Provider value={state}>

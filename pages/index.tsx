@@ -49,8 +49,23 @@ const Home: NextPage = () => {
 
   const lazyRoot = React.useRef(null);
 
-  const { audio, loading, setLoading, data, reload, setReload } =
-    React.useContext(AppContext);
+  const {
+    audio,
+    loading,
+    setLoading,
+    data,
+    reload,
+    setReload,
+    numberOfPages,
+  }: {
+    audio: HTMLAudioElement;
+    loading: boolean;
+    setLoading: React.Dispatch<React.SetStateAction<boolean>>;
+    data: any;
+    reload: number;
+    setReload: React.Dispatch<React.SetStateAction<number>>;
+    numberOfPages: number;
+  } = React.useContext(AppContext);
 
   const mute = () => {
     audio.muted = !audio.muted;
@@ -745,7 +760,7 @@ const Home: NextPage = () => {
                 </motion.button>
                 <hr className="text-white border-white border-2 my-4" />
                 {/* comment sect ion */}
-                <PaginatedItems itemsPerPage={5} />
+                <PaginatedItems itemsPerPage={numberOfPages} />
                 <hr className="text-white border-white border-2 my-4" />
                 <p className="mx-4 leading-5">
                   Ucapan selamat dan kebahagiaan bisa dari mana saja, Tanpa
